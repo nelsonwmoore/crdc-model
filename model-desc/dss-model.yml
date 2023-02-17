@@ -25,10 +25,7 @@ Nodes:
       - File Type
   Imaging:
     Props:
-      - Imaging Modality # -> File node?
-  Primary:
-    Props:
-      - Primary Site # -> Disease node? or a new Diagnosis node?
+      - Imaging Modality
   Principal Investigator:
     Props:
       - Principal Investigator Name
@@ -40,6 +37,9 @@ Nodes:
     Props:
       - Project Identifier
       - Project Name
+  Site:
+    Props:
+      - Primary Site
   Specimen:
     Props:
       - Specimen Anatomic Site
@@ -66,7 +66,7 @@ Nodes:
   Tissue:
     Props:
       - Tissue General Morphology
-      - Tissue Specific Morphology # to Specimen node?
+      - Tissue Specific Morphology
   Tumor:
     Props:
-      -  Tumor Grade # -> Diagnosis/Disease/Specimen node?
+      -  Tumor Grade

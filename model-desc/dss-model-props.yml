@@ -1,11 +1,9 @@
-PropDefinitions:
+PropDefinitions: # If 
   # Disease
   Disease Clinical Stage:
-    Desc: # CDE here? or maybe as a term synonymous w/ the prop?
+    Desc:
     Type:
     Req:
-    # is_external: ?
-    # url: ?
   Disease Code:
     Desc:
     Type:
@@ -70,11 +68,6 @@ PropDefinitions:
     Desc: TBD; DICOM Modality Type (per caDSR registration submission, formerly Imaging Modality)
     Type:
     Req:
-  # Primary
-  Primary Site:
-    Desc:
-    Type:
-    Req:
   # Principal Investigator
   Principal Investigator Name:
     Desc: >
@@ -100,6 +93,11 @@ PropDefinitions:
     Req:
   Project Name:
     Desc: 11459804; Project Name (CRDC Alt Name)
+    Type:
+    Req:
+  # Site
+  Primary Site:
+    Desc:
     Type:
     Req:
   # Specimen
