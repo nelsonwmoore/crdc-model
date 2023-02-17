@@ -1,0 +1,939 @@
+Source: DSS
+Models:
+  - CCDI
+  - CDS
+  - CFDE
+  - CTDC
+  - GDC
+  - HTAN
+  - ICDC
+  - IDC
+  - PDC
+  - mCODE
+Nodes: # all these tentative
+  - Disease
+  - Gene
+  - Exposure # ?
+  - Imaging # ?
+  - Primary # ?
+  - Principal Investigator # ?
+  - File
+  # - Other
+  - Program
+  - Project
+  - Specimen
+  - Study
+  - Subject
+  - Tissue # ? 
+  - Tumor # ?
+Props:
+  - Disease Clinical Stage:
+      CDA:
+        - entity_type: property
+          handle: Diagnosis.hasDiseaseStaging
+      ICDC:
+        - entity_type: property
+          handle: diagnosis.stage_of_disease
+      PDC:
+        - entity_type: property
+          handle: Diagnosis.tumor_stage
+      mCODE:
+        - entity_type: property
+          handle: Primary Cancer Condition Profile.Code
+        - entity_type: property
+          handle: Primary Cancer Condition Profile.Stage
+        - entity_type: property
+          handle: Primary Cancer Condition Profile.Stage
+      GDC:
+        - entity_type: property
+          handle: Diagnosis.figo_stage
+        - entity_type: property
+          handle: Diagnosis.ajcc_clinical_stage
+        - entity_type: property
+          handle: Diagnosis.ann_arbor_clinical_stage
+        - entity_type: property
+          handle: Diagnosis.cog_liver_stage
+        - entity_type: property
+          handle: Diagnosis.enneking_msts_stage
+        - entity_type: property
+          handle: Diagnosis.igcccg_stage
+        - entity_type: property
+          handle: Diagnosis.inrg_stage
+        - entity_type: property
+          handle: Diagnosis.inss_stage
+        - entity_type: property
+          handle: Diagnosis.irs_stage
+        - entity_type: property
+          handle: Diagnosis.iss_stage
+        - entity_type: property
+          handle: Diagnosis.masaoka_stage
+      PDC:
+        - entity_type: property
+          handle: Diagnosis.figo_stage
+        - entity_type: property
+          handle: Diagnosis.ajcc_clinical_stage
+        - entity_type: property
+          handle: Diagnosis.ann_arbor_clinical_stage
+        - entity_type: property
+          handle: Diagnosis.cog_liver_stage
+        - entity_type: property
+          handle: Diagnosis.enneking_msts_stage
+        - entity_type: property
+          handle: Diagnosis.igcccg_stage
+        - entity_type: property
+          handle: Diagnosis.inrg_stage
+        - entity_type: property
+          handle: Diagnosis.inss_stage
+        - entity_type: property
+          handle: Diagnosis.irs_stage
+        - entity_type: property
+          handle: Diagnosis.iss_stage
+        - entity_type: property
+          handle: Diagnosis.masaoka_stage
+        - entity_type: property
+          handle: Diagnosis.figo_staging_edition_year
+      HTAN:
+        - entity_type: property
+          handle: Diagnosis.figo_stage
+        - entity_type: property
+          handle: Diagnosis.ajcc_clinical_stage
+        - entity_type: property
+          handle: Diagnosis.ann_arbor_clinical_stage
+        - entity_type: property
+          handle: Diagnosis.cog_liver_stage
+        - entity_type: property
+          handle: Diagnosis.enneking_msts_stage
+        - entity_type: property
+          handle: Diagnosis.igcccg_stage
+        - entity_type: property
+          handle: Diagnosis.inrg_stage
+        - entity_type: property
+          handle: Diagnosis.inss_stage
+        - entity_type: property
+          handle: Diagnosis.irs_stage
+        - entity_type: property
+          handle: Diagnosis.iss_stage
+        - entity_type: property
+          handle: Diagnosis.masaoka_stage
+  - Disease Code:
+      GDC:
+        - entity_type: property
+          handle: Diagnosis.icd_10_code
+      PDC: 
+        - entity_type: property
+          handle: Diagnosis.icd_10_code
+      CDA:
+        - entity_type: property
+          handle: Patient.hasDisease #?     [OntologyReference]
+      HTAN:
+        - entity_type: property
+          handle: Diagnosis.icd_10_code
+      C2M2:
+        - entity_type: property
+          handle: disease.id
+      mCODE:
+        - entity_type: property
+          handle: Primary Cancer Condition Profile.Code
+  - Disease Pathologic Stage:
+      GDC:
+        - entity_type: property
+          handle: Diagnosis.ajcc_pathologic_stage
+        - entity_type: property
+          handle: Diagnosis.ann_arbor_pathologic_stage
+      PDC:
+        - entity_type: property
+          handle: Diagnosis.ajcc_pathologic_stage
+        - entity_type: property
+          handle: Diagnosis.ann_arbor_pathologic_stage
+      CDA:
+        - entity_type: property
+          handle: Diagnosis.hasDiseaseStaging
+      HTAN:
+        - entity_type: property
+          handle: Diagnosis.ajcc_pathologic_stage
+        - entity_type: property
+          handle: Diagnosis.ann_arbor_pathologic_stage
+  - Gene Chromosome:
+      CTDC:
+        - entity_type: property
+          handle: snv_variant.Chromosome
+        - entity_type: property
+          handle: delins_variant.Chromosome
+        - entity_type: property
+          handle: indel_variant.Chromosome
+        - entity_type: property
+          handle: copy_number_variant.Chromosome
+  - Gene Locus:
+      GDC:
+        - entity_type: property
+          handle: MolecularTest.locus
+      PDC:
+        - entity_type: property
+          handle: Gene.locus
+      HTAN:
+        - entity_type: property
+          handle: Molecular Test.locus
+  - Gene Symbol:
+      CTDC:
+        - entity_type: property
+          handle: indel_variant.gene
+        - entity_type: property
+          handle: snv_variant.gene
+      CTDC:
+        - entity_type: property
+          handle: delins_variant.gene
+        - entity_type: property
+          handle: copy_number_variant.gene
+      GDC:
+        - entity_type: property
+          handle: MolecularTest.gene_symbol
+        - entity_type: property
+          handle: MolecularTest.second_gene_symbol
+      PDC:
+        - entity_type: property
+          handle: Gene.gene_name
+      HTAN:
+        - entity_type: property
+          handle: Molecular Test.gene_symbol
+        - entity_type: property
+          handle: Molecular Test.second_gene_symbol
+      C2M2:
+        - entity_type: property
+          handle: gene.name
+  - Gene Variant Type:
+      CTDC:
+        - entity_type: property
+          handle: snv_variant.oncomine_variant_class
+        - entity_type: property
+          handle: copy_number_variant.oncomine_variant_class
+        - entity_type: property
+          handle: delins_variant.oncomine_variant_class
+        - entity_type: property
+          handle: indel_variant.oncomine_variant_class
+        - entity_type: property
+          handle: gene_fusion_variant.oncomine_variant_class
+        - entity_type: property
+          handle: delins_variant.variant_classification
+        - entity_type: property
+          handle: indel_variant.variant_classification
+        - entity_type: property
+          handle: snv_variant.variant_classification
+      GDC:
+        - entity_type: property
+          handle: MolecularTest.variant_type
+      HTAN:
+        - entity_type: property
+          handle: Molecular Test.variant_type
+  - Exposure Type:
+      HTAN:
+        - entity_type: property
+          handle: Exposure.type_of_smoke_exposure
+  - File Checksum Value:
+      ICDC:
+        - entity_type: property
+          handle: file.md5sum
+      PDC:
+        - entity_type: property
+          handle: File.md5sum
+        - entity_type: property
+          handle: PDC.File.sha1
+      CDA:
+        - entity_type: property
+          handle: File.checksum
+      C2M2:
+        - entity_type: property
+          handle: file.md5
+        - entity_type: property
+          handle: C2M2.file.sha256
+      GDC:
+        - entity_type: property
+          handle: AnalysisMetadata.md5sum
+        - entity_type: property
+          handle: BiospecimenSupplement.md5sum
+        - entity_type: property
+          handle: ClinicalSupplement.md5sum
+        - entity_type: property
+          handle: ExperimentMetadata.md5sum
+        - entity_type: property
+          handle: PathologyReport.md5sum
+        - entity_type: property
+          handle: ProteinExpression.md5sum
+        - entity_type: property
+          handle: RawMethylationArray.md5sum
+        - entity_type: property
+          handle: RunMetadata.md5sum
+        - entity_type: property
+          handle: SlideImage.md5sum
+        - entity_type: property
+          handle: SubmittedAlignedReads.md5sum
+        - entity_type: property
+          handle: SubmittedGenomicProfile.md5sum
+        - entity_type: property
+          handle: SubmittedGenotypingArray.md5sum
+        - entity_type: property
+          handle: SubmittedTangentCopyNumber.md5sum
+        - entity_type: property
+          handle: SubmittedUnalignedReads.md5sum
+  - File Description:
+      CTDC:
+        - entity_type: property
+          handle: file.file_description
+      ICDC:
+        - entity_type: property
+          handle: File.file_description
+      CDS:
+        - entity_type: property
+          handle: File.file_description
+  - File Identifier:
+      ICDC:
+        - entity_type: property
+          handle: file.uuid
+      IDC:
+        - entity_type: property
+          handle: TCIA.source_DOI
+      PDC:
+        - entity_type: property
+          handle: File.file_id
+      CDS:
+        - entity_type: property
+          handle: File.file_id
+      CDA:
+        - entity_type: property
+          handle: File.dct:identifier
+      C2M2:
+        - entity_type: property
+          handle: file.local_id
+  - File Format:
+      CTDC:
+        - entity_type: property
+          handle: file.file_format
+      ICDC:
+        - entity_type: property
+          handle: file.file_format
+      PDC:
+        - entity_type: property
+          handle: File.file_format
+      CDS:
+        - entity_type: property
+          handle: Additional Study Information.file_types_and_format
+      CDA:
+        - entity_type: property
+          handle: File.file_format
+      C2M2:
+        - entity_type: property
+          handle: file.file_format
+      GDC:
+        - entity_type: property
+          handle: ClinicalSupplement.data_format
+        - entity_type: property
+          handle: BiospecimenSupplement.data_format
+        - entity_type: property
+          handle: ExperimentMetadata.data_format
+        - entity_type: property
+          handle: PathologyReport.data_format
+        - entity_type: property
+          handle: ProteinExpression.data_format
+        - entity_type: property
+          handle: RunMetadata.data_format
+        - entity_type: property
+          handle: SlideImage.data_format
+        - entity_type: property
+          handle: AnalysisMetadata.data_format
+        - entity_type: property
+          handle: RawMethylationArray.data_format
+        - entity_type: property
+          handle: SubmittedAlignedReads.data_format
+        - entity_type: property
+          handle: SubmittedGenomicProfile.data_format
+        - entity_type: property
+          handle: SubmittedGenotypingArray.data_format
+        - entity_type: property
+          handle: SubmittedTangentCopyNumber.data_format
+        - entity_type: property
+          handle: SubmittedUnalignedReads.data_format
+  - File Name:
+      CTDC:
+        - entity_type: property
+          handle: file.file_name
+      ICDC:
+        - entity_type: property
+          handle: file.file_name
+      PDC:
+        - entity_type: property
+          handle: File.file_name
+        - entity_type: property
+          handle: File.original_file_name
+      CDS:
+        - entity_type: property
+          handle: File.file_name
+      CDA:
+        - entity_type: property
+          handle: ResearchSubject.file
+      C2M2:
+        - entity_type: property
+          handle: file.filename
+      GDC:
+        - entity_type: property
+          handle: AnalysisMetadata.file_name
+        - entity_type: property
+          handle: BiospecimenSupplement.file_name
+        - entity_type: property
+          handle: ClinicalSupplement.file_name
+        - entity_type: property
+          handle: ExperimentMetadata.file_name
+        - entity_type: property
+          handle: PathologyReport.file_name
+        - entity_type: property
+          handle: ProteinExpression.file_name
+        - entity_type: property
+          handle: RawMethylationArray.file_name
+        - entity_type: property
+          handle: RunMetadata.file_name
+        - entity_type: property
+          handle: SlideImage.file_name
+        - entity_type: property
+          handle: SubmittedAlignedReads.file_name
+        - entity_type: property
+          handle: SubmittedGenomicProfile.file_name
+        - entity_type: property
+          handle: SubmittedGenotypingArray.file_name
+        - entity_type: property
+          handle: SubmittedTangentCopyNumber.file_name
+        - entity_type: property
+          handle: SubmittedUnalignedReads.file_name
+  - File Size:
+      ICDC:
+        - entity_type: property
+          handle: file.file_size
+      PDC:
+        - entity_type: property
+          handle: File.file_size
+      CDA:
+        - entity_type: property
+          handle: File.byte_size
+      C2M2:
+        - entity_type: property
+          handle: file.size_in_bytes
+      GDC:
+        - entity_type: property
+          handle: ProteinExpression.file_size
+        - entity_type: property
+          handle: BiospecimenSupplement.file_size
+        - entity_type: property
+          handle: ClinicalSupplement.file_size
+        - entity_type: property
+          handle: ExperimentMetadata.file_size
+        - entity_type: property
+          handle: PathologyReport.file_size
+        - entity_type: property
+          handle: RunMetadata.file_size
+        - entity_type: property
+          handle: SlideImage.file_size
+        - entity_type: property
+          handle: AnalysisMetadata.file_size
+        - entity_type: property
+          handle: RawMethylationArray.file_size
+        - entity_type: property
+          handle: SubmittedAlignedReads.file_size
+        - entity_type: property
+          handle: SubmittedGenomicProfile.file_size
+        - entity_type: property
+          handle: SubmittedGenotypingArray.file_size
+        - entity_type: property
+          handle: SubmittedTangentCopyNumber.file_size
+        - entity_type: property
+          handle: SubmittedUnalignedReads.file_size
+  - File Type:
+      ICDC:
+        - entity_type: property
+          handle: file.file_type
+      PDC:
+        - entity_type: property
+          handle: File.file_type
+      CDS:
+        - entity_type: property
+          handle: File.file_type
+      CDA:
+        - entity_type: property
+          handle: File.data_type
+      C2M2:
+        - entity_type: property
+          handle: file.data_type
+      GDC:
+        - entity_type: property
+          handle: BiospecimenSupplement.data_type
+        - entity_type: property
+          handle: ClinicalSupplement.data_type
+        - entity_type: property
+          handle: ExperimentMetadata.data_type
+        - entity_type: property
+          handle: PathologyReport.data_type
+        - entity_type: property
+          handle: ProteinExpression.data_type
+        - entity_type: property
+          handle: RunMetadata.data_type
+        - entity_type: property
+          handle: SlideImage.data_type
+        - entity_type: property
+          handle: AnalysisMetadata.data_type
+        - entity_type: property
+          handle: RawMethylationArray.data_type
+        - entity_type: property
+          handle: SubmittedAlignedReads.data_type
+        - entity_type: property
+          handle: SubmittedGenomicProfile.data_type
+        - entity_type: property
+          handle: SubmittedGenotypingArray.data_type
+        - entity_type: property
+          handle: SubmittedTangentCopyNumber.data_type
+        - entity_type: property
+          handle: SubmittedUnalignedReads.data_type
+        - entity_type: property
+          handle: Additional Study Information.file_types_and_format
+  - Imaging Modality:
+      GDC:
+        - entity_type: property
+          handle: FollowUp.imaging_type
+      IDC:
+        - entity_type: property
+          handle: DICOM.Modality
+      PDC:
+        - entity_type: property
+          handle: FollowUp.imaging_type
+      CDS:
+        - entity_type: property
+          handle: Imaging-Specific Information.modality
+      CDA:
+        - entity_type: property
+          handle: File.hasImagingFileType
+  - Primary Site:
+      GDC:
+        - entity_type: property
+          handle: Case.primary_site
+      ICDC:
+        - entity_type: property
+          handle: Diagnosis.primary_disease_site
+      PDC:
+        - entity_type: property
+          handle: Case.primary_site
+      CDS:
+        - entity_type: property
+          handle: Diagnosis.primary_site
+      mCODE:
+        - entity_type: property
+          handle: Primary Cancer Condition Profile.Body Site
+  - Principal Investigator Name:
+      ICDC:
+        - entity_type: property
+          handle: principal_investigator.pi_first_name
+      CDA:
+        - entity_type: property
+          handle: Dataset.isPrincipalInvestigator
+      ICDC:
+        - entity_type: property
+          handle: principal_investigator.pi_last_name
+      CTDC:
+        - entity_type: property
+          handle: clinical_trial.principal_investigators
+      C2M2:
+        - entity_type: property
+          handle: dcc.contact_name"
+      ICDC:
+        - entity_type: property
+          handle: principal_investigator.pi_middle_initial
+  - Program Identifier:
+      GDC:
+        - entity_type: property
+          handle: Program.id
+      PDC:
+        - entity_type: property
+          handle: Program.program_id
+  - Program Name:
+      GDC:
+        - entity_type: property
+          handle: Program.name
+      ICDC:
+        - entity_type: property
+          handle: program.program_name
+        - entity_type: property
+          handle: program.program_acronym
+      PDC:
+        - entity_type: property
+          handle: Program.name
+        - entity_type: property
+          handle: Program.program_shortname
+      CDS:
+        - entity_type: property
+          handle: Funding Information.funding_source_program_name"
+      IDC:
+        - entity_type: property
+          handle: TCIA.Program
+  - Project Identifier:
+      GDC:
+        - entity_type: property
+          handle: Project.id
+        - entity_type: property
+          handle: FamilyHistory.project_id
+        - entity_type: property
+          handle: FollowUp.project_id
+        - entity_type: property
+          handle: Treatment.project_id
+        - entity_type: property
+          handle: Demographic.project_id
+        - entity_type: property
+          handle: ReadGroup.project_id
+        - entity_type: property
+          handle: Aliquot.project_id
+        - entity_type: property
+          handle: Analyte.project_id
+        - entity_type: property
+          handle: BiospecimenSupplement.project_id
+        - entity_type: property
+          handle: Case.project_id
+        - entity_type: property
+          handle: ClinicalSupplement.project_id
+        - entity_type: property
+          handle: Diagnosis.project_id
+        - entity_type: property
+          handle: MolecularTest.project_id
+        - entity_type: property
+          handle: PathologyReport.project_id
+        - entity_type: property
+          handle: Portion.project_id
+        - entity_type: property
+          handle: ProteinExpression.project_id
+        - entity_type: property
+          handle: Sample.project_id
+        - entity_type: property
+          handle: Slide.project_id
+        - entity_type: property
+          handle: SlideImage.project_id
+      IDC:
+        - entity_type: property
+          handle: TCIA.collection_id
+      PDC:
+        - entity_type: property
+          handle: Project.project_id
+        - entity_type: property
+          handle: Sample.gdc_project_id
+      CDA:
+        - entity_type: property
+          handle: Project.dct:identifier
+      C2M2:
+        - entity_type: property
+          handle: project.local_id
+  - Project Name:
+      C2M2:
+        - entity_type: property
+          handle: project.name
+  - Specimen Anatomic Site:
+      GDC:
+        - entity_type: property
+          handle: Sample.biospecimen_anatomic_site
+      PDC:
+        - entity_type: property
+          handle: Sample.biospecimen_anatomic_site
+      CDS:
+        - entity_type: property
+          handle: Additional Sample Information.sample_anatomic_site
+      CDA:
+        - entity_type: property
+          handle: Specimen.anatomical_site
+      C2M2:
+        - entity_type: property
+          handle: biosample.anatomy
+      mCODE:
+        - entity_type: property
+          handle: Genomic Specimen Profile.Collection > Body Site
+      ICDC:
+        - entity_type: property
+          handle: sample.sample_site
+  - Specimen Identifier:
+      GDC:
+        - entity_type: property
+          handle: Sample.id
+      ICDC:
+        - entity_type: property
+          handle: sample.sample_id
+      PDC:
+        - entity_type: property
+          handle: Sample.sample_id
+        - entity_type: property
+          handle: Sample.gdc_sample_id
+      CDS:
+        - entity_type: property
+          handle: Sample Information.sample_id
+      CDA:
+        - entity_type: property
+          handle: Specimen.dct:identifier
+      mCODE:
+        - entity_type: property
+          handle: Tumor Specimen Profile.Identifier
+  - Specimen Longest Dimension:
+      GDC:
+        - entity_type: property
+          handle: Sample.longest_dimension
+      PDC:
+        - entity_type: property
+          handle: Sample.longest_dimension
+  - Specimen Shortest Dimension:
+      GDC:
+        - entity_type: property
+          handle: Sample.shortest_dimension
+      PDC:
+        - entity_type: property
+          handle: Sample.shortest_dimension
+  - Specimen Type:
+      GDC:
+        - entity_type: property
+          handle: Sample.sample_type
+      ICDC:
+        - entity_type: property
+          handle: sample.physical_sample_type 
+      PDC:
+        - entity_type: property
+          handle: Sample.sample_type
+      CDS:
+        - entity_type: property
+          handle: Sample Information.sample_type
+      CDA:
+        - entity_type: property
+          handle: Specimen.source_material_type
+      HTAN:
+        - entity_type: property
+          handle: Molecular Test.biospecimen_type
+      mCODE:
+        - entity_type: property
+          handle: Genomic Specimen Profile.Type
+  - Study Identifier:
+      CTDC:
+        - entity_type: property
+          handle: clinical_trial.clinical_trial_id
+      ICDC:
+        - entity_type: property
+          handle: Study.clinical_study_id
+      PDC:
+        - entity_type: property
+          handle: Study.study_id
+      C2M2:
+        - entity_type: property
+          handle: project.local_id
+  - Study Name:
+      CTDC:
+        - entity_type: property
+          handle: clinical_trial.clinical_trial_long_name
+        - entity_type: property
+          handle: clinical_trial.clinical_trial_short_name
+      ICDC:
+        - entity_type: property
+          handle: study.clinical_study_name
+      PDC:
+        - entity_type: property
+          handle: Study.submitter_id_name
+        - entity_type: property
+          handle: Study.study_short_name
+  - Study Type:
+      CTDC:
+        - entity_type: property
+          handle: clinical_trial.clinical_trial_type
+      ICDC:
+        - entity_type: property
+          handle: study.clinical_study_type
+  - Subject Age at Diagnosis:
+      GDC:
+        - entity_type: property
+          handle: Diagnosis.age_at_diagnosis
+      PDC:
+        - entity_type: property
+          handle: Diagnosis.age_at_diagnosis
+      CDS:
+        - entity_type: property
+          handle: Additional Diagnosis Information.age_at_diagnosis
+      CDA:
+        - entity_type: property
+          handle: Diagnosis.age_at_diagnosis
+      HTAN:
+        - entity_type: property
+          handle: Diagnosis.age_at_diagnosis
+  - Subject Age at Specimen Collection:
+      GDC:
+        - entity_type: property
+          handle: Sample.days_to_collection
+      CDS:
+        - entity_type: property
+          handle: Additional Sample Information.sample_age_at_collection
+  - Subject Ethnicity:
+      CTDC:
+        - entity_type: property
+          handle: case.ethnicity
+      GDC:
+        - entity_type: property
+          handle: Demographic.ethnicity
+      PDC:
+        - entity_type: property
+          handle: Demographic.ethnicity
+      CDS:
+        - entity_type: property
+          handle: Participant.ethnicity
+      CDA:
+        - entity_type: property
+          handle: Patient.ethnicity
+      HTAN:
+        - entity_type: property
+          handle: Demographics.Ethnicity
+      C2M2:
+        - entity_type: property
+          handle: subject.ethnicity
+  - Subject Gender (Gender Identity):
+      CTDC:
+        - entity_type: property
+          handle: case.gender
+      GDC:
+        - entity_type: property
+          handle: Demographic.gender
+      PDC:
+        - entity_type: property
+          handle: Demographic.gender
+      CDS:
+        - entity_type: property
+          handle: Participant.gender
+      HTAN:
+        - entity_type: property
+          handle: Demographics.gender
+      mCODE:
+        - entity_type: property
+          handle: Cancer Patient Profile.Gender
+  - Subject Gender (Phenotypic Sex):
+      CDA:
+        - entity_type: property
+          handle: Patient.sex (Consider PhenotypicSex)
+  - Subject Identifier:
+      CTDC:
+        - entity_type: property
+          handle: case.case_id
+      GDC:
+        - entity_type: property
+          handle: Case.id
+      ICDC:
+        - entity_type: property
+          handle: case.case_id
+      IDC:
+        - entity_type: property
+          handle: DICOM.Patient Module.Patient ID
+      PDC:
+        - entity_type: property
+          handle: Case.case_id
+      CDS:
+        - entity_type: property
+          handle: Participant.subject_id
+      CDA:
+        - entity_type: property
+          handle: Patient.dct:identifier
+      C2M2:
+        - entity_type: property
+          handle: biosample.local_id
+      mCODE:
+        - entity_type: property
+          handle: Cancer Patient Profile.Identifier
+  - Subject Race:
+      CTDC:
+        - entity_type: property
+          handle: case.race
+      GDC:
+        - entity_type: property
+          handle: Demographic.race
+      IDC:
+        - entity_type: property
+          handle: DICOM.Patient Module.Patient's Ethnic Group
+      PDC:
+        - entity_type: property
+          handle: Demographic.race
+      CDS:
+        - entity_type: property
+          handle: Participant.race
+      CDA:
+        - entity_type: property
+          handle: Patient.race
+      HTAN:
+        - entity_type: property
+          handle: Demographics.Race
+      C2M2:
+        - entity_type: property
+          handle: subject_race.race
+  - Subject Sex (Genotypic Sex):
+      ICDC:
+        - entity_type: property
+          handle: demographic.sex
+      IDC:
+        - entity_type: property
+          handle: DICOM.Patient Module.Patient's Sex
+      CDA:
+        - entity_type: property
+          handle: Patient.hasGenotypicSex
+      C2M2:
+        - entity_type: property
+          handle: subject.sex
+  - Subject Taxon:
+      IDC:
+        - entity_type: property
+          handle: DICOM.PatientSpeciesCodeSequence
+      PDC:
+        - entity_type: property
+          handle: Case.taxon
+      CDA:
+        - entity_type: property
+          handle: Patient.taxon
+      C2M2:
+        - entity_type: property
+          handle: subject_role_taxonomy.taxonomy_id
+  - Tissue General Morphology:
+      GDC:
+        - entity_type: property
+          handle: Diagnosis.morphology
+      PDC:
+        - entity_type: property
+          handle: Diagnosis.morphology
+      CDS:
+        - entity_type: property
+          handle: Additional Diagnosis Information.morphology
+      CDA:
+        - entity_type: property
+          handle: Specimen.general_tissue_morphology
+      HTAN:
+        - entity_type: property
+          handle: Diagnosis.Morphology
+      mCODE:
+        - entity_type: property
+          handle: Primary Cancer Condition Profile.Histology Morphology Behavior
+  - Tissue Specific Morphology:
+      ICDC:
+        - entity_type: property
+          handle: sample.specific_sample_pathology
+      CDA:
+        - entity_type: property
+          handle: Specimen.specific_tissue_morphology
+      mCODE:
+        - entity_type: property
+          handle: Primary Cancer Condition Profile.Code
+  - Tumor Grade:
+    GDC:
+        - entity_type: property
+          handle: Diagnosis.tumor_grade
+    ICDC:
+        - entity_type: property
+          handle: Diagnosis.histological_grade
+    PDC:
+        - entity_type: property
+          handle: Diagnosis.tumor_grade
+        - entity_type: property
+          handle: Diagnosis.who_cns_grade
+        - entity_type: property
+          handle: Diagnosis.who_nte_grade
+        - entity_type: property
+          handle: +Diagnosis.gleason_grade_tertiary
+    CDS:
+        - entity_type: property
+          handle: Additional Diagnosis Information.tumor_grade
+    HTAN:
+        - entity_type: property
+          handle: Diagnosis.tumor_grade

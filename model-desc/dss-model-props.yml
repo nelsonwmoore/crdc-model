@@ -1,0 +1,201 @@
+PropDefinitions:
+  # Disease
+  Disease Clinical Stage:
+    Desc: # CDE here? or maybe as a term synonymous w/ the prop?
+    Type:
+    Req:
+    # is_external: ?
+    # url: ?
+  Disease Code:
+    Desc:
+    Type:
+    Req:
+  Disease Pathologic Stage:
+    Desc:
+    Type:
+    Req:
+  # Gene
+  Gene Chromosome:
+    Desc: 11379445 (DRAFT CDE proposed by caDSR); Chromosome Name (DRAFT CRDC Alt Name)
+    Type:
+    Req:
+  Gene Locus:
+    Desc:
+    Type:
+    Req:
+  Gene Symbol:
+    Desc: 11280318; HGNC Gene Symbol (Preferred QT & CRDC Alt Name)
+    Type:
+    Req:
+  Gene Variant Type:
+    Desc: TBD; Gene Variant Type (NOT YET FINALIZED)
+    Type:
+    Req:
+  # Exposure
+  Exposure Type:
+    Desc: 11256813; Environmental Exposure Type (Preferred QT & CRDC Alt Name)
+    Type:
+    Req:
+  # File
+  File Checksum Value:
+    Desc: 11480133; Data File Checksum Value (CRDC Alt Name)
+    Type:
+    Req:
+  File Description:
+    Desc: 11280338; Data File Description (CRDC Alt Name)
+    Type:
+    Req:
+  File Identifier:
+    Desc:
+    Type:
+    Req:
+  File Format:
+    Desc: 11416926; Data File Format (CRDC Alt Name)
+    Type:
+    Req:
+  File Name:
+    Desc: 11284037; Data File Name (CRDC Alt Name)
+    Type:
+    Req:
+  File Size:
+    Desc: 11479876; Data File Size (CRDC Alt Name)
+    Type:
+    Req:
+  File Type:
+    Desc:
+    Type:
+    Req:
+  # Imaging
+  Imaging Modality:
+    Desc: TBD; DICOM Modality Type (per caDSR registration submission, formerly Imaging Modality)
+    Type:
+    Req:
+  # Primary
+  Primary Site:
+    Desc:
+    Type:
+    Req:
+  # Principal Investigator
+  Principal Investigator Name:
+    Desc: >
+      10624731; Principal Investigator First Name (CRDC Alt Name); 
+      10624734; Principal Investigator ORCID ID (CRDC Alt Name); 
+      10624733; Principal Investigator Last Name (CRDC Alt Name); 
+      10624732; Principal Investigator Middle Name (CRDC Alt Name)
+    Type:
+    Req:
+  # Program
+  Program Identifier:
+    Desc:
+    Type:
+    Req:
+  Program Name:
+    Desc: TBD; Program Name (per caDSR registration submission)
+    Type:
+    Req:
+  # Project
+  Project Identifier:
+    Desc:
+    Type:
+    Req:
+  Project Name:
+    Desc: 11459804; Project Name (CRDC Alt Name)
+    Type:
+    Req:
+  # Specimen
+  Specimen Anatomic Site:
+    Desc: TBD; Uberon Specimen Anatomic Site (as of latest post-RFC draft)
+    Type:
+    Req:
+  Specimen Identifier:
+    Desc:
+    Type:
+    Req:
+  Specimen Longest Dimension:
+    Desc:
+    Type:
+    Req:
+  Specimen Shortest Dimension:
+    Desc:
+    Type:
+    Req:
+  Specimen Type:
+    Desc: 11253427??? TBD???; OBI Specimen Type (as of latest post-RFC draft)
+    Type:
+    Req:
+  # Study
+  Study Identifier:
+    Desc:
+    Type:
+    Req:
+  Study Name:
+    Desc: >
+      TBD; Study Name (per caDSR registration submission)
+      TBD; Study Short Name (per caDSR registration submission)
+    Type:
+    Req:
+  Study Type:
+    Desc: 11160683; "Study Type (CRDC Alt Name) Study Primary Purpose (Preferred QT)
+    Type:
+    Req:
+  # Subject
+  Subject Age at Diagnosis:
+    Desc: 10609539; Subject Age at Diagnosis (CRDC Alt Name)
+    Type:
+    Req:
+  Subject Age at Specimen Collection:
+    Desc: >
+      11248865; Days from Diagnosis to Specimen Collection (CRDC Alt Name); 
+      11248874; Days from First Subject Visit to Specimen Collection (CRDC Alt Name); 
+      11250807; Days from First Treatment to Specimen Collection (CRDC Alt Name); 
+      11251130; Days from Initial Genomic Sequencing to Specimen Collection (CRDC Alt Name); 
+      11251133; Days from Recurrence to Specimen Collection (CRDC Alt Name)
+    Type:
+    Req:
+  Subject Ethnicity:
+    Desc: 2192217, v2.0; Subject Reported Ethnicity (CRDC Alt Name)
+    Type:
+    Req:
+  Subject Gender (Gender Identity):
+    Desc: >
+      TBD; Person Reported Gender​ Type (per latest RFC); 
+      TBD; Person Self-Reported Gender Indicator (per latest RFC); 
+      TBD; Person Gender Data Provider Source
+    Type:
+    Req:
+  Subject Gender (Phenotypic Sex):
+    Desc: ON HOLD; ON HOLD
+    Type:
+    Req:
+  Subject Identifier:
+    Desc:
+    Type:
+    Req:
+  Subject Race:
+    Desc: 2192199; Subject Race (CRDC Alt Name)
+    Type:
+    Req:
+  Subject Sex (Genotypic Sex):
+    Desc: ON HOLD; ON HOLD
+    Type:
+    Req:
+  Subject Taxon:
+    Desc: >
+      10543082; NCBI Taxonomy Name (Preferred QT & CRDC Alt Name); 
+      10543100; NCBI Taxonomy ID (CRDC Alt Name)
+    Type:
+    Req:
+  # Tissue
+  Tissue General Morphology:
+    Desc:
+    Type:
+    Req:
+  Tissue Specific Morphology:
+    Desc:
+    Type:
+    Req:
+  # Tumor
+  Tumor Grade:
+    Desc:
+    Type:
+    Req:

@@ -1,0 +1,72 @@
+Handle: DSS
+Nodes:
+  Disease:
+    Props:
+      - Disease Clinical Stage
+      - Disease Code
+      - Disease Pathologic Stage
+  Gene:
+    Props:
+      - Gene Chromosome
+      - Gene Locus
+      - Gene Symbol
+      - Gene Variant Type
+  Exposure:
+    Props:
+      - Exposure Type:
+  File:
+    Props:
+      - File Checksum Value
+      - File Description
+      - File Identifier
+      - File Format
+      - File Name
+      - File Size
+      - File Type
+  Imaging:
+    Props:
+      - Imaging Modality # -> File node?
+  Primary:
+    Props:
+      - Primary Site # -> Disease node? or a new Diagnosis node?
+  Principal Investigator:
+    Props:
+      - Principal Investigator Name
+  Program:
+    Props:
+      - Program Identifier
+      - Program Name
+  Project:
+    Props:
+      - Project Identifier
+      - Project Name
+  Specimen:
+    Props:
+      - Specimen Anatomic Site
+      - Specimen Identifier
+      - Specimen Longest Dimension
+      - Specimen Shortest Dimension
+      - Specimen Type
+  Study:
+    Props:
+      - Study Identifier
+      - Study Name
+      - Study Type
+  Subject:
+    Props:
+      - Subject Age at Diagnosis
+      - Subject Age at Specimen Collection
+      - Subject Ethnicity
+      - Subject Gender (Gender Identity)
+      - Subject Gender (Phenotypic Sex)
+      - Subject Identifier
+      - Subject Race
+      - Subject Sex (Genotypic Sex)
+      - Subject Taxon
+  Tissue:
+    Props:
+      - Tissue General Morphology
+      - Tissue Specific Morphology # to Specimen node?
+  Tumor:
+    Props:
+      -  Tumor Grade # -> Diagnosis/Disease/Specimen node?
