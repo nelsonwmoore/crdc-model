@@ -1,199 +1,401 @@
-PropDefinitions: # If 
-  # Disease
-  Disease Clinical Stage:
-    Desc:
-    Type:
-    Req:
-  Disease Code:
-    Desc:
-    Type:
-    Req:
-  Disease Pathologic Stage:
-    Desc:
-    Type:
-    Req:
-  # Gene
-  Gene Chromosome:
-    Desc: 11379445 (DRAFT CDE proposed by caDSR); Chromosome Name (DRAFT CRDC Alt Name)
-    Type:
-    Req:
-  Gene Locus:
-    Desc:
-    Type:
-    Req:
-  Gene Symbol:
-    Desc: 11280318; HGNC Gene Symbol (Preferred QT & CRDC Alt Name)
-    Type:
-    Req:
-  Gene Variant Type:
-    Desc: TBD; Gene Variant Type (NOT YET FINALIZED)
-    Type:
-    Req:
-  # Exposure
-  Exposure Type:
-    Desc: 11256813; Environmental Exposure Type (Preferred QT & CRDC Alt Name)
-    Type:
-    Req:
-  # File
-  File Checksum Value:
-    Desc: 11480133; Data File Checksum Value (CRDC Alt Name)
-    Type:
-    Req:
-  File Description:
-    Desc: 11280338; Data File Description (CRDC Alt Name)
-    Type:
-    Req:
-  File Identifier:
-    Desc:
-    Type:
-    Req:
-  File Format:
-    Desc: 11416926; Data File Format (CRDC Alt Name)
-    Type:
-    Req:
-  File Name:
-    Desc: 11284037; Data File Name (CRDC Alt Name)
-    Type:
-    Req:
-  File Size:
-    Desc: 11479876; Data File Size (CRDC Alt Name)
-    Type:
-    Req:
-  File Type:
-    Desc:
-    Type:
-    Req:
-  # Imaging
-  Imaging Modality:
-    Desc: TBD; DICOM Modality Type (per caDSR registration submission, formerly Imaging Modality)
-    Type:
-    Req:
-  # Principal Investigator
-  Principal Investigator Name:
-    Desc: >
-      10624731; Principal Investigator First Name (CRDC Alt Name); 
-      10624734; Principal Investigator ORCID ID (CRDC Alt Name); 
-      10624733; Principal Investigator Last Name (CRDC Alt Name); 
-      10624732; Principal Investigator Middle Name (CRDC Alt Name)
-    Type:
-    Req:
-  # Program
-  Program Identifier:
-    Desc:
-    Type:
-    Req:
+PropDefinitions:
+  # administrative
+  Data File Checksum Type:
+    Code: '11475057'
+    Desc: The method by which the file checksum was calculated.
+    Enum:
+      - md5sum
+      - sha1
+      - sha256
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11475057%20and%20ver_nr=1
+  Data File Checksum Value:
+    Code: '11480133'
+    Desc: A small-sized block of data derived from a file for the purpose of detecting errors that may have been introduced during file transmission and/or storage and used to verify data integrity.
+    Type: string
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11480133%20and%20ver_nr=1
+  Data File Compression Status:
+    Code: '11387114'
+    Desc: The state of data when saved to storage space or during data transmission.
+    Enum:
+      - Unknown
+      - Compressed
+      - Uncompressed
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11387114%20and%20ver_nr=1
+  Data File Description:
+    Code: '11280338'
+    Desc: A free text field that can be used to document the content and other details about an electronic file that may not be captured elsewhere.
+    Type: string
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11280338%20and%20ver_nr=1
+  Data File Format:
+    Code: '11416926'
+    Desc: A defined organization or layout representing and structuring data in a computer file.
+    Enum:
+      - ADF
+      - AVI
+      - BAI
+      - BAM
+      - BED
+      - bedgraph
+      - bigBed
+      - bigWig
+      - Binary Format
+      - BCR Biotab
+      - BIOM
+      - CRAM
+      - CSV
+      - DOCX
+      - DSV
+      - FASTA
+      - FASTQ
+      - GCT/Res Format
+      - DICOM
+      - GenBank Format
+      - GFF3
+      - GPR
+      - GTF
+      - HDF5
+      - HTML
+      - GZIP Format
+      - MAGE-TAB
+      - MAT
+      - MPEG-4
+      - mzML
+      - mzXML
+      - NIFTI Format
+      - MATLAB Script
+      - OME-TIFF
+      - PDF
+      - Plain Text Data Format
+      - PNG
+      - R File Format
+      - R Markdown
+      - SDRF
+      - Sequence Record Format
+      - SVG
+      - Python Script Format
+      - SVS
+      - TAR
+      - Thermo RAW
+      - TSV
+      - TXT
+      - VCF
+      - XLS
+      - XLSX
+      - XML
+      - TIFF
+      - YAML
+      - ZIP
+      - IDAT
+      - IDF
+      - JPEG
+      - JPEG 2000
+      - JSON
+      - MAF
+      - CEL
+      - CRAI
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11416926%20and%20ver_nr=1
+  Data File Name:
+    Code: '11284037'
+    Desc: The literal label for an electronic data file.
+    Type: string
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11284037%20and%20ver_nr=1
+  Data File Size:
+    Code: '11479876'
+    Desc: The measure (in bytes) of how much space a data file takes up on a storage medium.
+    Type: integer
+    Units: bytes
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11479876%20and%20ver_nr=1
+  Principal Investigator First Name:
+    Code: '10624731'
+    Desc: The first or given name of the person responsible for the conduct of the clinical trial or research project.
+    Type: string
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=10624731%20and%20ver_nr=1
+  Principal Investigator Last Name:
+    Code: '10624733'
+    Desc: The last or family name of the person responsible for the conduct of the clinical trial or research project.
+    Type: string
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=10624733%20and%20ver_nr=1
+  Principal Investigator Middle Name:
+    Code: '10624732'
+    Desc: The middle name of the person responsible for the conduct of the clinical trial or research project.
+    Type: string
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=10624732%20and%20ver_nr=1
+  Principal Investigator ORCID ID:
+    Code: '10624734'
+    Desc: A persistent unique digital identifier assigned to a principal investigator by the Open Researcher and Contributor ID (ORCID) organization.""
+    Type: string
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=10624734%20and%20ver_nr=1
   Program Name:
-    Desc: TBD; Program Name (per caDSR registration submission)
-    Type:
-    Req:
-  # Project
-  Project Identifier:
-    Desc:
-    Type:
-    Req:
+    Code: '11444542'
+    Desc: "The narrative title used to refer to a broad framework (an administrative umbrella) of goals under which related projects or other research activities are grouped. Example - Clinical Proteomic Tumor Analysis Consortium"
+    Type: string
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11444542%20and%20ver_nr=1
+  Program Short Name:
+    Code: '11459801'
+    Desc: "An acronym or abbreviated form of the title of a broad framework of goals under which related projects or other research activities are grouped. Example - CPTAC"
+    Type: string
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11459801%20and%20ver_nr=1
   Project Name:
-    Desc: 11459804; Project Name (CRDC Alt Name)
-    Type:
-    Req:
-  # Site
-  Primary Site:
-    Desc:
-    Type:
-    Req:
-  # Specimen
-  Specimen Anatomic Site:
-    Desc: TBD; Uberon Specimen Anatomic Site (as of latest post-RFC draft)
-    Type:
-    Req:
-  Specimen Identifier:
-    Desc:
-    Type:
-    Req:
-  Specimen Longest Dimension:
-    Desc:
-    Type:
-    Req:
-  Specimen Shortest Dimension:
-    Desc:
-    Type:
-    Req:
-  Specimen Type:
-    Desc: 11253427??? TBD???; OBI Specimen Type (as of latest post-RFC draft)
-    Type:
-    Req:
-  # Study
-  Study Identifier:
-    Desc:
-    Type:
-    Req:
+    Code: '11459804'
+    Desc: The narrative title used to refer to an organ-, site-, disease- or phase-specific data collection within a broad framework of goals under which related studies or other research activities are grouped.
+    Type: string
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11459804%20and%20ver_nr=1
+  Project Short Name:
+    Code: '11459806'
+    Desc: An acronym or abbreviated form of the title used to refer to an organ-, site- or disease-specific data collection within a broad framework of goals under which related studies or other research activities are grouped.
+    Type: string
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11459806%20and%20ver_nr=1
   Study Name:
-    Desc: >
-      TBD; Study Name (per caDSR registration submission)
-      TBD; Study Short Name (per caDSR registration submission)
-    Type:
-    Req:
-  Study Type:
-    Desc: 11160683; "Study Type (CRDC Alt Name) Study Primary Purpose (Preferred QT)
-    Type:
-    Req:
-  # Subject
-  Subject Age at Diagnosis:
-    Desc: 10609539; Subject Age at Diagnosis (CRDC Alt Name)
-    Type:
-    Req:
-  Subject Age at Specimen Collection:
-    Desc: >
-      11248865; Days from Diagnosis to Specimen Collection (CRDC Alt Name); 
-      11248874; Days from First Subject Visit to Specimen Collection (CRDC Alt Name); 
-      11250807; Days from First Treatment to Specimen Collection (CRDC Alt Name); 
-      11251130; Days from Initial Genomic Sequencing to Specimen Collection (CRDC Alt Name); 
-      11251133; Days from Recurrence to Specimen Collection (CRDC Alt Name)
-    Type:
-    Req:
-  Subject Ethnicity:
-    Desc: 2192217, v2.0; Subject Reported Ethnicity (CRDC Alt Name)
-    Type:
-    Req:
-  Subject Gender (Gender Identity):
-    Desc: >
-      TBD; Person Reported Gender​ Type (per latest RFC); 
-      TBD; Person Self-Reported Gender Indicator (per latest RFC); 
-      TBD; Person Gender Data Provider Source
-    Type:
-    Req:
-  Subject Gender (Phenotypic Sex):
-    Desc: ON HOLD; ON HOLD
-    Type:
-    Req:
-  Subject Identifier:
-    Desc:
-    Type:
-    Req:
+    Code: '11459810'
+    Desc: The narrative title used as a textual label for a research data collection. Example - Comparative Molecular Life History of Spontaneous Canine and Human Gliomas
+    Type: string
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11459810%20and%20ver_nr=1
+  Study Short Name:
+    Code: '11459812'
+    Desc: The acronym or abbreviated form of the title for a research data collection. Example – GLIOMA01
+    Type: string
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11459812%20and%20ver_nr=1
+  # demographics
+  NCBI Taxonomy ID:
+    Code: '10543100'
+    Desc: The unique numerical identifier of a subject's organismal classification as defined in the National Center for Biotechnology Information (NCBI) Taxonomy standard nomenclature and classification repository.
+    Type: integer
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=10543100%20and%20ver_nr=1
+  Subject Age At Diagnosis:
+    Code: '10609539'
+    Desc: Age at the time of diagnosis expressed in number of days since birth.
+    Type: integer
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=10609539%20and%20ver_nr=1
   Subject Race:
-    Desc: 2192199; Subject Race (CRDC Alt Name)
-    Type:
-    Req:
-  Subject Sex (Genotypic Sex):
-    Desc: ON HOLD; ON HOLD
-    Type:
-    Req:
-  Subject Taxon:
-    Desc: >
-      10543082; NCBI Taxonomy Name (Preferred QT & CRDC Alt Name); 
-      10543100; NCBI Taxonomy ID (CRDC Alt Name)
-    Type:
-    Req:
-  # Tissue
-  Tissue General Morphology:
-    Desc:
-    Type:
-    Req:
-  Tissue Specific Morphology:
-    Desc:
-    Type:
-    Req:
-  # Tumor
+    Code: '2192199'
+    Desc: The text for reporting information about race based on the Office of Management and Budget (OMB) categories.
+    Enum:
+      - Not Reported
+      - American Indian or Alaska Native
+      - Native Hawaiian or other Pacific Islander
+      - Unknown
+      - Asian
+      - White
+      - Black or African American
+      - Not allowed to collect
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=2192199%20and%20ver_nr=1
+  Subject Reported Ethnicity:
+    Code: '2192217'
+    Desc: The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.
+    Enum:
+      - HISPANIC OR LATINO
+      - UNKNOWN
+      - Not reported
+      - NOT HISPANIC OR LATINO
+      - Not reported
+      - Unknown
+      - Not Hispanic or Latino
+      - Hispanic or Latino
+      - NOT REPORTED
+      - Hispanic or Latino
+      - Not Hispanic or Latino
+      - Not reported
+      - Unknown
+      - Not allowed to collect
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=2192217%20and%20ver_nr=1
+  # specimen
+  Days from Specimen Collection to Initial Pathologic Diagnosis:
+    Code: '11253404'
+    Desc: The number of days from the date a sample was collected to the date of the initial pathologic diagnosis.
+    Type: integer
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11253404%20and%20ver_nr=1
+  Days from Diagnosis to Specimen Collection:
+    Code: '11248865'
+    Desc: The number of days from the date the diagnosis was made to the date a sample was collected.
+    Type: integer
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11248865%20and%20ver_nr=1
+  Days from First Subject Visit to Specimen Collection:
+    Code: '11248874'
+    Desc: The number of days from the date the subject first visited to the date a sample was collected.
+    Type: integer
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11248874%20and%20ver_nr=1
+  Days from First Treatment to Specimen Collection:
+    Code: '11250807'
+    Desc: The number of days from the date the first treatment was administered to the date a sample was collected.
+    Type: integer
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11250807%20and%20ver_nr=1
+  Days from Initial Genomic Sequencing to Specimen Collection:
+    Code: '11251130'
+    Desc: The number of days from the date the initial genomic sequencing was done to the date a sample was collected.
+    Type: integer
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11251130%20and%20ver_nr=1
+  Days from Recurrence to Specimen Collection:
+    Code: '11251133'
+    Desc: The number of days from the date the disease recurrence was identified to the date a sample was collected.
+    Type: integer
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11251133%20and%20ver_nr=1
+  ICD-O-3 Morphology Code:
+    Code: '11326261'
+    Desc: The microscopic anatomy of normal and abnormal cells and tissues of the specimen as captured in the morphology codes of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3). Example - 8010/0
+    Enum:
+      - ICD-O-3 (By Reference)
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11326261%20and%20ver_nr=1
+  Specimen Longest Dimension:
+    Code: '5432602'
+    Desc: Numeric value that represents the longest dimension of the sample, measured in millimeters.
+    Type: integer
+    Units: millimeters
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=5432602%20and%20ver_nr=1
+  Specimen Shortest Dimension:
+    Code: '5432603'
+    Desc: Numeric value that represents the shortest dimension of the sample, measured in millimeters.
+    Type: integer
+    Units: millimeters
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=5432603%20and%20ver_nr=1
+  Uberon Specimen Anatomic Site Identifier:
+    Code: '12083894'
+    Desc: The location within the body from which a specimen was originally obtained as captured in the Uberon identifier.
+    Enum:
+      - Uberon (By Reference)
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=12083894%20and%20ver_nr=1
+  # diagnosis
+  ICD-10-CM Disease Code:
+    Code: '11479873'
+    Desc: An alphanumeric value from the tenth version of the International Classification of Disease (ICD-10-CM, the disease code subset of ICD-10) used to identify the diagnosis in humans.
+    Enum:
+      - ICD-10-CM (By Reference)
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11479873%20and%20ver_nr=1
+  ICD-O-3 Primary Site Code:
+    Code: '11341616'
+    Desc: The organ or part of the body where cancer begins as captured by the topography codes of the International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3).
+    Enum:
+      - ICD-O-3 (By Reference)
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11341616%20and%20ver_nr=1
   Tumor Grade:
-    Desc:
-    Type:
-    Req:
+    Code: '11325685'
+    Desc: A text term to express the degree of abnormality of cancer cells as a measure of differentiation and aggressiveness.
+    Enum:
+      - G1
+      - G2
+      - G3
+      - GX
+      - High Grade
+      - Intermediate Grade
+      - Low Grade
+      - Not Applicable
+      - G4
+      - GB
+      - Not Reported
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11325685%20and%20ver_nr=1
+  # molecular
+  HGNC Gene Identifier:
+    Code: '12461467'
+    Desc: The unique numerical identifier for a particular gene assigned by the HGNC (HUGO Gene Nomenclature Committee - an organism specific nomenclature committee).
+    Enum:
+      - HGNC (By Reference)
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=12461467%20and%20ver_nr=1
+  # treatment
+  DICOM Modality Type:
+    Code: '12137353'
+    Desc: A system of categories for representing a specific manner, characteristic, pattern of a data acquisition device used in an imaging event whether physical or electronic.
+    Enum:
+      - OP
+      - OT
+      - PR
+      - PT
+      - PX
+      - RF
+      - RG
+      - RTDOSE
+      - RTIMAGE
+      - RTPLAN
+      - RTRECORD
+      - RTSTRUCT
+      - SM
+      - SMR
+      - SR
+      - ST
+      - TG
+      - BI
+      - AS
+      - AU
+      - CD
+      - CF
+      - CP
+      - CR
+      - US
+      - VF
+      - XA
+      - XC
+      - CS
+      - CT
+      - DD
+      - DF
+      - DG
+      - DM
+      - DS
+      - DX
+      - EC
+      - EPS
+      - ES
+      - FA
+      - FS
+      - GM
+      - HC
+      - HD
+      - IO
+      - IVUS
+      - KO
+      - LP
+      - LS
+      - MA
+      - MG
+      - MR
+      - MS
+      - AR
+      - ASMT
+      - BDUS
+      - BMD
+      - CTPROTOCOL
+      - DMS
+      - DOC
+      - EEG
+      - EMG
+      - EOG
+      - FID
+      - IOL
+      - IVOCT
+      - KER
+      - LEN
+      - M3D
+      - OAM
+      - OCT
+      - OPM
+      - OPT
+      - OPTBSV
+      - OPTENF
+      - OPV
+      - OSS
+      - PLAN
+      - POS
+      - REG
+      - RESP
+      - RWV
+      - SEG
+      - SRF
+      - STAIN
+      - TEXTUREMAP
+      - VA
+      - ECG
+      - NM
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=12137353%20and%20ver_nr=1
+  Environmental Exposure Type:
+    Code: '11256813'
+    Desc: The category related to contact with chemical, biological, or physical substances found in air, water, food, soil, or product that may have a harmful effect on a person's health.
+    Enum:
+      - Tobacco Related Exposure
+      - Asbestos Exposure
+      - Marijuana Smoke Exposure
+      - Respirable Crystalline Silica Exposure
+      - Radon Exposure
+      - Wood Dust Exposure
+      - Smoke Exposure
+      - Chemical Exposure
+      - Radiation Exposure
+      - Smokeless Tobacco Exposure
+    Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11256813%20and%20ver_nr=1

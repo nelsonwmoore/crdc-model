@@ -1,72 +1,46 @@
-Handle: DSS
+Handle: CRDC
 Nodes:
-  Disease:
-    Props:
-      - Disease Clinical Stage
-      - Disease Code
-      - Disease Pathologic Stage
-  Gene:
-    Props:
-      - Gene Chromosome
-      - Gene Locus
-      - Gene Symbol
-      - Gene Variant Type
-  Exposure:
-    Props:
-      - Exposure Type:
-  File:
-    Props:
-      - File Checksum Value
-      - File Description
-      - File Identifier
-      - File Format
-      - File Name
-      - File Size
-      - File Type
-  Imaging:
-    Props:
-      - Imaging Modality
-  Principal Investigator:
-    Props:
-      - Principal Investigator Name
-  Program:
-    Props:
-      - Program Identifier
-      - Program Name
-  Project:
-    Props:
-      - Project Identifier
-      - Project Name
-  Site:
-    Props:
-      - Primary Site
+  Administrative:
+    - Data File Checksum Type
+    - Data File Checksum Value
+    - Data File Compression Status
+    - Data File Description
+    - Data File Format
+    - Data File Name
+    - Data File Size
+    - Principal Investigator First Name
+    - Principal Investigator Last Name
+    - Principal Investigator Middle Name
+    - Principal Investigator ORCID ID
+    - Program Name
+    - Program Short Name
+    - Project Name
+    - Project Short Name
+    - Study Name
+    - Study Short Name
+  Demographics:
+    - NCBI Taxonomy ID
+    - Subject Age At Diagnosis
+    - Subject Race
+    - Subject Reported Ethnicity
+    - Days from Specimen Collection to Initial Pathologic Diagnosis
   Specimen:
-    Props:
-      - Specimen Anatomic Site
-      - Specimen Identifier
-      - Specimen Longest Dimension
-      - Specimen Shortest Dimension
-      - Specimen Type
-  Study:
-    Props:
-      - Study Identifier
-      - Study Name
-      - Study Type
-  Subject:
-    Props:
-      - Subject Age at Diagnosis
-      - Subject Age at Specimen Collection
-      - Subject Ethnicity
-      - Subject Gender (Gender Identity)
-      - Subject Gender (Phenotypic Sex)
-      - Subject Identifier
-      - Subject Race
-      - Subject Sex (Genotypic Sex)
-      - Subject Taxon
-  Tissue:
-    Props:
-      - Tissue General Morphology
-      - Tissue Specific Morphology
-  Tumor:
-    Props:
-      -  Tumor Grade
+    - Days from Specimen Collection to Initial Pathologic Diagnosis
+    - Days from Diagnosis to Specimen Collection
+    - Days from First Subject Visit to Specimen Collection
+    - Days from First Treatment to Specimen Collection
+    - Days from Initial Genomic Sequencing to Specimen Collection
+    - Days from Recurrence to Specimen Collection
+    - ICD-O-3 Morphology Code
+    - Specimen Longest Dimension
+    - Specimen Shortest Dimension
+    - Uberon Specimen Anatomic Site Identifier
+  Diagnosis:
+    - ICD-10-CM Disease Code
+    - ICD-O-3 Primary Site Code
+    - Tumor Grade
+  Molecular:
+    - HGNC Gene Identifier
+  Treatment:
+    - DICOM Modality Type
+    - Environmental Exposure Type
