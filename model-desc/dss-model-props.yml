@@ -183,20 +183,11 @@ PropDefinitions:
     Code: '2192217'
     Desc: The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.
     Enum:
-      - HISPANIC OR LATINO
-      - UNKNOWN
-      - Not reported
-      - NOT HISPANIC OR LATINO
-      - Not reported
-      - Unknown
-      - Not Hispanic or Latino
-      - Hispanic or Latino
-      - NOT REPORTED
       - Hispanic or Latino
       - Not Hispanic or Latino
-      - Not reported
-      - Unknown
       - Not allowed to collect
+      - Not reported
+      - Unknown
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=2192217%20and%20ver_nr=1
   # specimen
   Days from Specimen Collection to Initial Pathologic Diagnosis:
