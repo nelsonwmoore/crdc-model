@@ -572,12 +572,13 @@ Terms:
     Origin: caDSR
     Value: Not Allowed To Collect
     Version: '1'
-  Unknown:
-    Code: 2572577
-    Definition: Not known, not observed, not recorded, or refused.
-    Origin: caDSR
-    Value: Unknown
-    Version: '1'
+  # Remove duplicate term
+  # Unknown:
+  #   Code: 2572577
+  #   Definition: Not known, not observed, not recorded, or refused.
+  #   Origin: caDSR
+  #   Value: Unknown
+  #   Version: '1'
   White:
     Code: 2572236
     Definition: Denotes person with European, Middle Eastern, or North African ancestral
@@ -601,24 +602,27 @@ Terms:
     Origin: caDSR
     Value: Not Hispanic or Latino
     Version: '1'
-  Not allowed to collect:
-    Code: 6662191
-    Definition: An indicator that specifies that a collection event was not permitted.
-    Origin: caDSR
-    Value: Not Allowed To Collect
-    Version: '1'
-  Not reported:
-    Code: 2572578
-    Definition: Not provided or available.
-    Origin: caDSR
-    Value: Not Reported
-    Version: '1'
-  Unknown:
-  Code: 2572577
-  Definition: Not known, not observed, not recorded, or refused.
-  Origin: caDSR
-  Value: Unknown
-  Version: '1'
+  # Remove duplicate term
+  # Not allowed to collect:
+  #   Code: 6662191
+  #   Definition: An indicator that specifies that a collection event was not permitted.
+  #   Origin: caDSR
+  #   Value: Not Allowed To Collect
+  #   Version: '1'
+  # Remove duplicate term
+  # Not reported:
+  #   Code: 2572578
+  #   Definition: Not provided or available.
+  #   Origin: caDSR
+  #   Value: Not Reported
+  #   Version: '1'
+  # Remove duplicate term
+  # Unknown:
+  #   Code: 2572577
+  #   Definition: Not known, not observed, not recorded, or refused.
+  #   Origin: caDSR
+  #   Value: Unknown
+  #   Version: '1'
 # icd-o-3 primary site code/icd-o-3 morphology code
   ICD-O-3 (By Reference):
     Origin: caDSR
@@ -714,12 +718,13 @@ Terms:
     Origin: caDSR
     Value: Not Applicable
     Version: '1'
-  Not Reported:
-    Code: 5612322
-    Definition: Not provided or available.
-    Origin: caDSR
-    Value: Not Stated
-    Version: '1'
+  # Remove duplicate term
+  # Not Reported:
+  #   Code: 5612322
+  #   Definition: Not provided or available.
+  #   Origin: caDSR
+  #   Value: Not Stated
+  #   Version: '1'
 # hgnc gene identifier
   HGNC (By Reference):
     Origin: caDSR
@@ -1432,10 +1437,10 @@ Terms:
     Value: Tobacco Related Exposure
     Version: '1'
   Wood Dust Exposure:
-  Code: 11167654
-  Definition: Environmental or occupational exposure to granular solids generated
-    when timber is processed, such as when it is chipped, sawed, turned, drilled or
-    sanded.
-  Origin: caDSR
-  Value: Wood Dust Exposure
-  Version: '1'
+    Code: 11167654
+    Definition: Environmental or occupational exposure to granular solids generated
+      when timber is processed, such as when it is chipped, sawed, turned, drilled or
+      sanded.
+    Origin: caDSR
+    Value: Wood Dust Exposure
+    Version: '1'

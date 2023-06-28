@@ -1,46 +1,53 @@
 Handle: CRDC
 Nodes:
   Administrative:
-    - Data File Checksum Type
-    - Data File Checksum Value
-    - Data File Compression Status
-    - Data File Description
-    - Data File Format
-    - Data File Name
-    - Data File Size
-    - Principal Investigator First Name
-    - Principal Investigator Last Name
-    - Principal Investigator Middle Name
-    - Principal Investigator ORCID ID
-    - Program Name
-    - Program Short Name
-    - Project Name
-    - Project Short Name
-    - Study Name
-    - Study Short Name
+    Props:
+      - Data File Checksum Type
+      - Data File Checksum Value
+      - Data File Compression Status
+      - Data File Description
+      - Data File Format
+      - Data File Name
+      - Data File Size
+      - Principal Investigator First Name
+      - Principal Investigator Last Name
+      - Principal Investigator Middle Name
+      - Principal Investigator ORCID ID
+      - Program Name
+      - Program Short Name
+      - Project Name
+      - Project Short Name
+      - Study Name
+      - Study Short Name
   Demographics:
-    - NCBI Taxonomy ID
-    - Subject Age At Diagnosis
-    - Subject Race
-    - Subject Reported Ethnicity
-    - Days from Specimen Collection to Initial Pathologic Diagnosis
+    Props:
+      - NCBI Taxonomy ID
+      - Subject Age At Diagnosis
+      - Subject Race
+      - Subject Reported Ethnicity
+      - Days from Specimen Collection to Initial Pathologic Diagnosis
   Specimen:
-    - Days from Specimen Collection to Initial Pathologic Diagnosis
-    - Days from Diagnosis to Specimen Collection
-    - Days from First Subject Visit to Specimen Collection
-    - Days from First Treatment to Specimen Collection
-    - Days from Initial Genomic Sequencing to Specimen Collection
-    - Days from Recurrence to Specimen Collection
-    - ICD-O-3 Morphology Code
-    - Specimen Longest Dimension
-    - Specimen Shortest Dimension
-    - Uberon Specimen Anatomic Site Identifier
+    Props:
+      - Days from Specimen Collection to Initial Pathologic Diagnosis
+      - Days from Diagnosis to Specimen Collection
+      - Days from First Subject Visit to Specimen Collection
+      - Days from First Treatment to Specimen Collection
+      - Days from Initial Genomic Sequencing to Specimen Collection
+      - Days from Recurrence to Specimen Collection
+      - ICD-O-3 Morphology Code
+      - Specimen Longest Dimension
+      - Specimen Shortest Dimension
+      - Uberon Specimen Anatomic Site Identifier
   Diagnosis:
-    - ICD-10-CM Disease Code
-    - ICD-O-3 Primary Site Code
-    - Tumor Grade
+    Props:
+      - ICD-10-CM Disease Code
+      - ICD-O-3 Primary Site Code
+      - Tumor Grade
   Molecular:
-    - HGNC Gene Identifier
+    Props:
+      - HGNC Gene Identifier
   Treatment:
-    - DICOM Modality Type
-    - Environmental Exposure Type
+    Props:
+      - DICOM Modality Type
+      - Environmental Exposure Type
+Relationships: []
