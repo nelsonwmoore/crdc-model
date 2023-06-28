@@ -72,7 +72,7 @@ Props:
       IDC:
         - instance_hash:
             Parents: TBD
-    Data File Compression Status: TBD
+    # Data File Compression Status: TBD
     Data File Description:
       CTDC:
         - file_description:
@@ -226,7 +226,7 @@ Props:
       ICDC:
         - pi_last_name:
             Parents: principal_investigator
-    Principal Investigator ORCID ID: TBD
+    # Principal Investigator ORCID ID: TBD
     Program Name:
       GDC:
         - name:
@@ -265,7 +265,7 @@ Props:
       PDC:
         - name:
             Parents: Project
-    Project Short Name: TBD
+    # Project Short Name: TBD
     Study Name:
       CTDC:
         - clinical_trial_long_name:
