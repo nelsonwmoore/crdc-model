@@ -1,23 +1,23 @@
 Terms:
 # data file checksum type
-  md5sum:
+  MD5 Checksum:
     Origin: caDSR
     Definition: A 32-character hexadecimal number that is computed on a file.
     Code: 11475055
     Version: "1"
-    Value: MD5 Checksum
-  sha1:
+    Value: md5sum
+  Secure Hash Algorithm-1:
     Origin: caDSR
     Definition: An algorithm for computing a condensed representation of a message or a data file that produces a 160-bit message digest.
     Code: 2929855
     Version: "1"
-    Value: Secure Hash Algorithm-1
-  sha256:
+    Value: sha1
+  Secure Hash Algorithm-256:
     Origin: caDSR
     Definition: An algorithm for computing a condensed representation of a message or a data file that produces a 256-bit message digest.
     Code: 2929856
     Version: "1"
-    Value: Secure Hash Algorithm-256
+    Value: sha256
 # data file compression status
   Unknown:
     Origin: caDSR
@@ -25,51 +25,51 @@ Terms:
     Code: 5682953
     Version: "1"
     Value: Unknown
-  Compressed:
+  Compressed File:
     Origin: caDSR
     Definition: A file containing data that is in a compressed state.
     Code: 11480563
-    Version: 
-    Value: Compressed File
-  Uncompressed:
+    Version: "1"
+    Value: Compressed
+  Uncompressed File:
     Origin: caDSR
     Definition: A file containing data that is in an uncompressed state.
     Code: 11480564
     Version: "1"
-    Value: Uncompressed File
+    Value: Uncompressed
 # data file format
-  ADF:
+  Array Design Format:
     Code: 11421996
     Definition: A tab-delimited file defining how each array in an investigation is
       used. This data includes what sequence is located at each position in an array
       and what the annotation of this sequence is; cross-references to entries in a
       public repository can be used if available.
     Origin: caDSR
-    Value: Array Design Format
+    Value: ADF
     Version: '1'
-  AVI:
+  AVI Format:
     Code: 11421997
     Definition: A multimedia container format for audio video interleaved (AVI) files
       that allows for synchronous audio-with-video playback.
     Origin: caDSR
-    Value: AVI Format
+    Value: AVI
     Version: '1'
-  BAI:
+  BAI File:
     Code: 11421998
     Definition: An index file found in the same directory as the binary alignment map
       (BAM) file, a compressed binary version of a sequence alignment/map (SAM) file.
     Origin: caDSR
-    Value: BAI File
+    Value: BAI
     Version: '1'
-  BAM:
+  Binary Alignment Map:
     Code: 6356231
     Definition: A binary representation of a sequence alignment map (SAM), a compact
       and indexable representation of nucleotide sequence alignments, compressed by
       the BGZF (Blocked GNU Zip Format) library.
     Origin: caDSR
-    Value: Binary Alignment Map
+    Value: BAM
     Version: '1'
-  BCR Biotab:
+  BCR Biotab Format:
     Code: 11421999
     Definition: Files that consist of aggregate clinical and biospecimen data across
       all cases of the given project. Biotab files are supplemental files that are available
@@ -77,24 +77,24 @@ Terms:
       level basis. These may also include fields that are not available in the GDC application
       programming interface (API).
     Origin: caDSR
-    Value: BCR Biotab Format
+    Value: BCR Biotab
     Version: '1'
-  BED:
+  BED Format:
     Code: 11422000
     Definition: A tab-delimited text file format that allows the specification of the
       sequence data that is displayed in an annotation track. The minimum required information
       is chromosome, start position, and end position.
     Origin: caDSR
-    Value: BED Format
+    Value: BED
     Version: '1'
-  BIOM:
+  BIOM Format:
     Code: 11422059
     Definition: A general-use format for representing biological sample by observation
       contingency tables. It is designed for general use in broad areas of comparative
       -omics. The primary use of this format is to represent operational taxonomic unit
       (OTU) and metagenome tables.
     Origin: caDSR
-    Value: BIOM Format
+    Value: BIOM
     Version: '1'
   Binary Format:
     Code: 11422004
@@ -104,7 +104,7 @@ Terms:
     Origin: caDSR
     Value: Binary Format
     Version: '1'
-  CEL:
+  Affymetrix CEL Format:
     Code: 12135194
     Definition: A type of file that stores the results of intensity calculations of
       pixel values for DNA microarray image analysis. The data includes an intensity
@@ -114,30 +114,30 @@ Terms:
       future analysis. The file also stores the previously stated data for each feature
       on the probe array.
     Origin: caDSR
-    Value: Affymetrix CEL Format
+    Value: CEL
     Version: '1'
-  CRAI:
+  CRAI File:
     Code: 12517496
     Definition: An external index file created by the sequencing data archive alongside
       a compressed reference-oriented alignment map (CRAM) file. This index file is
       available in the same directory as the CRAM file and is required for selective
       access to the genomic sequence alignment data within the CRAM file.
     Origin: caDSR
-    Value: CRAI File
+    Value: CRAI
     Version: '1'
-  CRAM:
+  CRAM Format:
     Code: 11422061
     Definition: A more highly compressed alternative to the BAM and SAM DNA sequence
       alignment file formats. It uses reference based compression, with only base calls
       that differ from a designated reference sequence being stored.
     Origin: caDSR
-    Value: CRAM Format
+    Value: CRAM
     Version: '1'
-  CSV:
+  Comma Separated Values Format:
     Code: 7797849
     Definition: A text file format that separates data elements with commas.
     Origin: caDSR
-    Value: Comma Separated Values Format
+    Value: CSV
     Version: '1'
   DICOM:
     Code: 2967848
@@ -147,21 +147,21 @@ Terms:
     Origin: caDSR
     Value: DICOM
     Version: '1'
-  DOCX:
+  DOCX Format:
     Code: 11422062
     Definition: A file type that uses Open XML Document format to store data for Microsoft
       Word and other compatible programs.
     Origin: caDSR
-    Value: DOCX Format
+    Value: DOCX
     Version: '1'
-  DSV:
+  DSV Format:
     Code: 11422063
     Definition: A delimiter-separated values file that contains plain text data divided
       into rows and columns by a designated special character.
     Origin: caDSR
-    Value: DSV Format
+    Value: DSV
     Version: '1'
-  FASTA:
+  FASTA Format:
     Code: 11422064
     Definition: A sequence in FASTA format consists of a single-line description, followed
       by lines of sequence data. The first character of the description line is a greater-than
@@ -170,53 +170,53 @@ Terms:
       being used to represent a gap of indeterminate length; in amino acid sequences
       asterix ("*") can represent a translation stop.
     Origin: caDSR
-    Value: FASTA Format
+    Value: FASTA
     Version: '1'
-  FASTQ:
-    Code: 11422065
-    Definition: A a tab-delimited containing information about an investigation, including
-      its name, a description, the investigator's contact details, bibliographic references,
-      and free text descriptions of any relevant protocols.
-    Origin: caDSR
-    Value: Investigation Description Format
-    Version: '1'
-  GCT/Res Format:
+  # Investigation Description Format:
+    # Code: 11422065
+    # Definition: A a tab-delimited containing information about an investigation, including
+      # its name, a description, the investigator's contact details, bibliographic references,
+      # and free text descriptions of any relevant protocols.
+    # Origin: caDSR
+    # Value: FASTQ
+    # Version: '1'
+  GCT/RES Format:
     Code: 11422066
     Definition: A tab-delimited text file that contains gene expression data as a column
       for each sample, a row for each gene, and an expression value for each gene in
       each sample. RES differs from GCT by having labels for each gene's absent (A)
       versus present (P) calls as generated by Affymetrix's GeneChip software.
     Origin: caDSR
-    Value: GCT/RES Format
+    Value: GCT/Res Format
     Version: '1'
-  GFF3:
+  General Feature Format Version 3:
     Code: 11422130
     Definition: A tab-separated format for sequence data. It uses one line per feature,
       each containing 9 columns of data, plus optional track definition lines.
     Origin: caDSR
-    Value: General Feature Format Version 3
+    Value: GFF3
     Version: '1'
-  GPR:
+  GenePix Results Format:
     Code: 11422131
     Definition: A tab-delimited text file format developed by Axon Instruments and used
       to export data from the microarray image analysis tool GenePix.
     Origin: caDSR
-    Value: GenePix Results Format
+    Value: GPR
     Version: '1'
-  GTF:
+  GTF Format:
     Code: 11422132
     Definition: A tab-delimited text format based on the general feature format (GFF)
       but which also contains some additional information for each gene.
     Origin: caDSR
-    Value: GTF Format
+    Value: GTF
     Version: '1'
-  GZIP Format:
+  Gzip File Format:
     Code: 2929849
     Definition: A file format consisting of a 10-byte header containing a magic number,
       a version number, and a timestamp, a Deflate-compressed body, and an 8-byte footer
       containing a checksum and the length of the original uncompressed data.
     Origin: caDSR
-    Value: Gzip File Format
+    Value: GZIP Format
     Version: '1'
   GenBank Format:
     Code: 11422129
@@ -226,38 +226,38 @@ Terms:
     Origin: caDSR
     Value: GenBank Format
     Version: '1'
-  HDF5:
+  Hierarchical Data Format 5:
     Code: 11422133
     Definition: A hierarchical, filesystem-like data format that can store metadata
       in the form of user-defined, named attributes, which are attached to groups and
       datasets, and representations of images and tables built up using datasets, groups
       and attributes.
     Origin: caDSR
-    Value: Hierarchical Data Format 5
+    Value: HDF5
     Version: '1'
-  HTML:
+  Hypertext Markup Language:
     Code: 11422134
     Definition: A standard markup language used to display content on a web page, as
       specified by the World Wide Web Consortium (W3C).
     Origin: caDSR
-    Value: Hypertext Markup Language
+    Value: HTML
     Version: '1'
-  IDAT:
+  IDAT Format:
     Code: 11495707
     Definition: A proprietary, encrypted XML-based, compressed electronic file format
       from Illumina Inc. for storing genome-wide profiling data. The data contains a
       summary of the intensity data generated from each probe used during a sequencing
       run.
     Origin: caDSR
-    Value: IDAT Format
+    Value: IDAT
     Version: '1'
-  IDF:
+  Investigation Description Format:
     Code: 11422065
     Definition: A a tab-delimited containing information about an investigation, including
       its name, a description, the investigator's contact details, bibliographic references,
       and free text descriptions of any relevant protocols.
     Origin: caDSR
-    Value: Investigation Description Format
+    Value: IDF
     Version: '1'
   JPEG:
     Code: 11422138
@@ -265,27 +265,27 @@ Terms:
     Origin: caDSR
     Value: JPEG
     Version: '1'
-  JPEG 2000:
+  JPEG 2000 Format:
     Code: 11422135
     Definition: A discrete wavelet transform (DWT)-based compression standard electronic
       file format for storing video images.
     Origin: caDSR
-    Value: JPEG 2000 Format
+    Value: JPEG 2000
     Version: '1'
-  JSON:
+  JSON Format:
     Code: 11422136
     Definition: A common open standard file format and data interchange format that
       uses human-readable text consisting of attribute-value pairs and arrays to store
       and transmit data.
     Origin: caDSR
-    Value: JSON Format
+    Value: JSON
     Version: '1'
-  MAF:
+  Mutation Annotation Format:
     Code: 11422137
     Definition: A tab-delimited text file containing mutation information aggregated
       from variant call files (VCF) across a project, trial or study.
     Origin: caDSR
-    Value: Mutation Annotation Format
+    Value: MAF
     Version: '1'
   MAGE-TAB:
     Code: 2953599
@@ -295,41 +295,41 @@ Terms:
     Origin: caDSR
     Value: MAGE-TAB
     Version: '1'
-  MAT:
+  MAT Format:
     Code: 11422139
     Definition: A proprietary, binary data container format used by MATLAB software
       to store workspace variables.
     Origin: caDSR
-    Value: MAT Format
+    Value: MAT
     Version: '1'
-  MATLAB Script:
+  MATLAB Script File:
     Code: 11422140
     Definition: A file that contains MATLAB commands and function calls.
     Origin: caDSR
-    Value: MATLAB Script File
+    Value: MATLAB Script
     Version: '1'
-  MPEG-4:
+  MP4 Format:
     Code: 11422141
     Definition: A multimedia file that is commonly used to store video and audio data.
     Origin: caDSR
-    Value: MP4 Format
+    Value: MPEG-4
     Version: '1'
-  NIFTI Format:
+  NIfTI Format:
     Code: 11422144
     Definition: An open file format used to store neuroscience and neuroradiology imaging
       data obtained by MRI. The raw image data in NIfTI is saved as a 3d image.
     Origin: caDSR
-    Value: NIfTI Format
+    Value: NIFTI Format
     Version: '1'
-  OME-TIFF:
+  Open Microscopy Environment Tagged Image File Format:
     Code: 11422196
     Definition: A tagged image file format (TIFF) image file format that contains an
       Open Microscopy Environment (OME) XML metadata block in the file header for storing
       microscopy information (pixels and metadata) using the OME Data Model.
     Origin: caDSR
-    Value: Open Microscopy Environment Tagged Image File Format
+    Value: OME-TIFF
     Version: '1'
-  PDF:
+  Portable Document Format:
     Code: 2967828
     Definition: An open file format created and controlled by Adobe Systems, for representing
       two-dimensional documents in a device independent and resolution independent fixed-layout
@@ -341,62 +341,62 @@ Terms:
       origin or destination (but depending on font availability when fonts are not encapsulated
       in the file).
     Origin: caDSR
-    Value: Portable Document Format
+    Value: PDF
     Version: '1'
-  PNG:
+  Portable Network Graphics:
     Code: 11422198
     Definition: An extensible file format for lossless data compression of images.
     Origin: caDSR
-    Value: Portable Network Graphics
+    Value: PNG
     Version: '1'
-  Plain Text Data Format:
-    Code: 11422197
-    Definition: A data format consisting of readable textual material maintained as
-      a sequential file.
-    Origin: caDSR
-    Value: Plain Text Data Format
-    Version: '1'
+  # Plain Text Data Format:
+    # Code: 11422197
+    # Definition: A data format consisting of readable textual material maintained as
+      # a sequential file.
+    # Origin: caDSR
+    # Value: Plain Text Data Format
+    # Version: '1'
   Python Script Format:
     Code: 11422199
     Definition: A plain text file that stores python code.
     Origin: caDSR
     Value: Python Script Format
     Version: '1'
-  R File Format:
+  R Format:
     Code: 11422200
     Definition: A file format used for writing scripts in the R programming language
       for execution within the R software environment, typically for statistical computation
       and graphics.
     Origin: caDSR
-    Value: R Format
+    Value: R File Format
     Version: '1'
-  R Markdown:
+  R Markdown Format:
     Code: 11422201
     Definition: A file format for making dynamic documents written in R. It is written
       in plain text format and contains chunks of embedded R code.
     Origin: caDSR
-    Value: R Markdown Format
+    Value: R Markdown
     Version: '1'
-  SDRF:
+  Sample and Data Relationship Format:
     Code: 11422202
     Definition: A tab-delimited file describing the relationships between samples, arrays,
       data and other objects used or produced during a microarray experiment.
     Origin: caDSR
-    Value: Sample and Data Relationship Format
+    Value: SDRF
     Version: '1'
-  SVG:
+  Scalable Vector Graphics:
     Code: 11422204
     Definition: A specification for describing vector graphics using extensible markup
       language.
     Origin: caDSR
-    Value: Scalable Vector Graphics
+    Value: SVG
     Version: '1'
-  SVS:
+  Spectral View Settings Format:
     Code: 11426797
     Definition: An electronic file format based on TIFF that is used for storing multiple
       high-resolution images in a single electronic file.
     Origin: caDSR
-    Value: Spectral View Settings Format
+    Value: SVS
     Version: '1'
   Sequence Record Format:
     Code: 11422203
@@ -404,12 +404,12 @@ Terms:
     Origin: caDSR
     Value: Sequence Record Format
     Version: '1'
-  TAR:
+  TAR Format:
     Code: 11426798
     Definition: A file format generated by the Unix command-line utility tar (tape archive).
       It is used for collecting many files into one archive file.
     Origin: caDSR
-    Value: TAR Format
+    Value: TAR
     Version: '1'
   TIFF:
     Code: 11426800
@@ -417,29 +417,29 @@ Terms:
     Origin: caDSR
     Value: TIFF
     Version: '1'
-  TSV:
+  Tab-Separated Value Format:
     Code: 11426801
     Definition: A file format where each line in the file contains a single piece of
       data and where each field or value in a line of data is separated from the next
       by a tab character.
     Origin: caDSR
-    Value: Tab-Separated Value Format
+    Value: TSV
     Version: '1'
-  TXT:
+  Plain Text Data Format:
     Code: 11422197
     Definition: A data format consisting of readable textual material maintained as
       a sequential file.
     Origin: caDSR
-    Value: Plain Text Data Format
+    Value: TXT
     Version: '1'
-  Thermo RAW:
+  Thermo RAW Format:
     Code: 11426799
     Definition: A proprietary file format developed by Thermo Scientific to capture
       mass spectrometry data produced by Thermo mass spectrometers.
     Origin: caDSR
-    Value: Thermo RAW Format
+    Value: Thermo RAW
     Version: '1'
-  VCF:
+  Variant Call File Format:
     Code: 11426802
     Definition: A text-based electronic file used for storing gene sequence variation
       data. The first text section is composed of a header containing the metadata and
@@ -448,79 +448,79 @@ Terms:
       file can include an unlimited number of optional columns to record other sample-related
       data.
     Origin: caDSR
-    Value: Variant Call File Format
+    Value: VCF
     Version: '1'
-  XLS:
+  XLS Format:
     Code: 11426803
     Definition: A proprietary binary file format used to store spreadsheet data in Microsoft
       Excel.
     Origin: caDSR
-    Value: XLS Format
+    Value: XLS
     Version: '1'
-  XLSX:
+  Excel Open XML Format:
     Code: 11426804
     Definition: A proprietary file format developed by Microsoft that allows the user
       to save a spreadsheet created in Excel in an open XML-format. The file then can
       be read and opened by other spreadsheet-compatible applications.
     Origin: caDSR
-    Value: Excel Open XML Format
+    Value: XLSX
     Version: '1'
-  XML:
+  Extensible Markup Language:
     Code: 2581637
     Definition: Extensible Markup Language
     Origin: caDSR
-    Value: Extensible Markup Language
+    Value: XML
     Version: '1'
-  YAML:
+  YAML Language:
     Code: 11426805
     Definition: A human-readable, tree-structured data-serialization language often
       used to create configuration files.
     Origin: caDSR
-    Value: YAML Language
+    Value: YAML
     Version: '1'
-  ZIP:
+  ZIP Format:
     Code: 11426806
     Definition: An archive file format that supports lossless data compression. It is
       used to compress one or more files together into a single location.
     Origin: caDSR
-    Value: ZIP Format
+    Value: ZIP
     Version: '1'
-  bedgraph:
+  Bedgraph Format:
     Code: 11422001
     Definition: A format that allows display of continuous-valued data in track format.
       This display type is useful for probability scores and transcriptome data.
     Origin: caDSR
-    Value: Bedgraph Format
+    Value: bedgraph
     Version: '1'
-  bigBed:
+  BigBed Format:
     Code: 11422002
     Definition: A format for large sequence annotation tracks, similar to the textual
       browser extensible data (BED) format. The annotated items can be either simple
       or a linked collection of exons.
     Origin: caDSR
-    Value: BigBed Format
+    Value: bigBed
     Version: '1'
-  bigWig:
+  BigWig Format:
     Code: 11422003
     Definition: A format for large sequence annotation tracks that consist of a value
       for each sequence position, similar to the textual wiggle (WIG) format.
     Origin: caDSR
-    Value: BigWig Format
+    Value: bigWig
     Version: '1'
-  mzML:
+  Mass Spectrometry Markup Language:
     Code: 11422142
     Definition: An open-source format for mass spectrometer output files that was designed
       to be utilized and adapted as advances in mass spectrometry technology proceed.
       This was standardized by the Human Proteome Organization (HUPO)-Proteomics Standards
       Initiative (PSI) Mass Spectrometry Standards (MSS) Working Group.
     Origin: caDSR
-    Value: Mass Spectrometry Markup Language
+    Value: mzML
     Version: '1'
-  mzXML:
+  Mass Spectrometry Extensible Markup Language:
     Code: 11422143
     Definition: An XML based common file format for mass spectrometry data.
     Origin: caDSR
-    Value: Mass Spectrometry Extensible Markup Language
+    Value: mzXML
     Version: '1'
 # subject race
   American Indian or Alaska Native:
@@ -548,7 +548,7 @@ Terms:
     Origin: caDSR
     Value: Black or African American
     Version: '1'
-  Native Hawaiian or other Pacific Islander:
+  Native Hawaiian or Other Pacific Islander:
     Code: 2572235
     Definition: Denotes a person having origins in any of the original peoples of Hawaii,
       Guam, Samoa, or other Pacific Islands. The term covers particularly people who
@@ -558,7 +558,7 @@ Terms:
       Solomon Islander, Tahitian, Tokelauan, Tongan, Yapese, or Pacific Islander, not
       specified.
     Origin: caDSR
-    Value: Native Hawaiian or Other Pacific Islander
+    Value: Native Hawaiian or other Pacific Islander
     Version: '1'
   Not Reported:
     Code: 2572578
@@ -566,11 +566,11 @@ Terms:
     Origin: caDSR
     Value: Not Reported
     Version: '1'
-  Not allowed to collect:
+  Not Allowed To Collect:
     Code: 6662191
     Definition: An indicator that specifies that a collection event was not permitted.
     Origin: caDSR
-    Value: Not Allowed To Collect
+    Value: Not allowed to collect
     Version: '1'
   # Remove duplicate term
   # Unknown:
@@ -624,71 +624,71 @@ Terms:
   #   Value: Unknown
   #   Version: '1'
 # icd-o-3 primary site code/icd-o-3 morphology code
-  ICD-O-3 (By Reference):
+  International Classification of Diseases for Oncology, Third Edition:
     Origin: caDSR
     Definition: The third edition of the International Classification of Diseases for Oncology, published in 2000, used principally in tumor and cancer registries for coding the site (topography) and the histology (morphology) of neoplasms.
     Code: 12126010
     Version: "1"
-    Value: International Classification of Diseases for Oncology, Third Edition
+    Value: ICD-O-3 (By Reference)
 # uberon specimen anatomic site identifier
-  Uberon (By Reference):
+  Uberon:
     Origin: caDSR
     Definition: An integrated cross-species anatomy ontology representing a variety of entities classified according to traditional anatomical criteria such as structure, function, and developmental lineage. The ontology includes comprehensive relationships to taxon-specific anatomical ontologies, allowing integration of functional, phenotype and expression data.
     Code: 12126011
     Version: "1"
-    Value: Uberon
+    Value: Uberon (By Reference)
 # icd-10-cm disease code
-  ICD-10-CM (By Reference):
+  ICD-10-CM:
     Origin: caDSR
     Definition: An extension of the ICD-10 created by the U.S. National Center for Health Statistics so that the system could be used to capture more morbidity data. This extension included a section of procedure codes.
     Code: 6356782
     Version: "1"
-    Value: ICD-10-CM
+    Value: ICD-10-CM (By Reference)
 # tumor grade
-  G1:
+  Well Differentiated:
     Code: 10987208
     Definition: Describes tumor cells that generally retain the appearance of normal
       cells and tend to grow and spread at a slower rate than undifferentiated or poorly
       differentiated tumor cells.
     Origin: caDSR
-    Value: Well Differentiated
+    Value: G1
     Version: '1'
-  G2:
+  Moderately Differentiated:
     Code: 4614616
     Definition: Describes tumor cells that have lost some of the appearance of normal
       cells. They tend to grow and spread at a faster rate than well differentiated
       tumor cells.
     Origin: caDSR
-    Value: Moderately Differentiated
+    Value: G2
     Version: '1'
-  G3:
+  Poorly Differentiated:
     Code: 5424651
     Definition: Describes tumor cells that generally have lost most of the appearance
       of normal cells. They tend to grow and spread.
     Origin: caDSR
-    Value: Poorly Differentiated
+    Value: G3
     Version: '1'
-  G4:
+  Undifferentiated:
     Code: 5428031
     Definition: A term used to describe cells or tissues that do not have specialized
       ("mature") structures or functions. Undifferentiated cancer cells often grow and
       spread quickly.
     Origin: caDSR
-    Value: Undifferentiated
+    Value: G4
     Version: '1'
-  GB:
+  Grade B:
     Code: 6050322
     Definition: A morphologic qualifier indicating that a neoplasm is of borderline
       malignancy.
     Origin: caDSR
-    Value: Grade B
+    Value: GB
     Version: '1'
-  GX:
+  Grade X:
     Code: 10987209
     Definition: A morphologic qualifier indicating that the grade of a neoplasm cannot
       be assessed.
     Origin: caDSR
-    Value: Grade X
+    Value: GX
     Version: '1'
   High Grade:
     Code: 3288211
@@ -726,219 +726,219 @@ Terms:
   #   Value: Not Stated
   #   Version: '1'
 # hgnc gene identifier
-  HGNC (By Reference):
+  HUGO Gene Nomenclature Committee:
     Origin: caDSR
     Definition: The worldwide authority that assigns standardized nomenclature to human genes. The HUGO Gene Nomenclature Committee is responsible for approving unique symbols and names for human loci, including protein coding genes, ncRNA genes, and pseudogenes, to allow unambiguous scientific communication. It is jointly funded by the US National Human Genome Research Institute (NHGRI) and Wellcome (UK) and operates under the auspices of the Human Genome Organization (HUGO).
     Code: 12126009
     Version: "1"
-    Value: HUGO Gene Nomenclature Committee
+    Value: HGNC (By Reference)
 # dicom modality type
-  AR:
+  Autorefraction:
     Code: 7552086
     Definition: An eye examination method in which a computer-controlled electronic
       optometer is used to automatically measure refractive error.
     Origin: caDSR
-    Value: Autorefraction
+    Value: AR
     Version: '1'
-  AS:
+  Angioscopy:
     Code: 2582158
     Definition: The use of an angioscope to view the interior of a blood vessel.
     Origin: caDSR
-    Value: Angioscopy
+    Value: AS
     Version: '1'
-  ASMT:
+  Content Assessment Result:
     Code: 12057185
     Definition: The results of an assessment or the content of one or more standard
       operating procedures (SOP) instance(s).
     Origin: caDSR
-    Value: Content Assessment Result
+    Value: ASMT
     Version: '1'
-  AU:
+  Audio:
     Code: 2582145
     Definition: The process of recording sound to a storage device.
     Origin: caDSR
-    Value: Audio
+    Value: AU
     Version: '1'
-  BDUS:
+  Ultrasound Bone Densitometry:
     Code: 12057439
     Definition: The use of quantitative ultrasound for estimating bone mineral density
       status of the peripheral skeleton, usually done at the heel.
     Origin: caDSR
-    Value: Ultrasound Bone Densitometry
+    Value: BDUS
     Version: '1'
-  BI:
+  Biomagnetic Imaging:
     Code: 2582121
     Definition: An imaging technique that use non-invasive measurements to map biologically-generated
       magnetic fields.
     Origin: caDSR
-    Value: Biomagnetic Imaging
+    Value: BI
     Version: '1'
-  BMD:
+  Bone Mineral Densitometry:
     Code: 12057440
     Definition: Any method used to measure bone mineral content and density.
     Origin: caDSR
-    Value: Bone Mineral Densitometry
+    Value: BMD
     Version: '1'
-  CD:
+  Color flow Doppler:
     Code: 2582122
     Definition: The use of pulsed ultrasound to visualize blood flow through blood vessels.
       Flow direction and speed are shown in differing colors.
     Origin: caDSR
-    Value: Color flow Doppler
+    Value: CD
     Version: '1'
-  CF:
+  Cinefluorography (retired):
     Code: 2582155
     Definition: Cinefluorography (retired)
     Origin: caDSR
-    Value: Cinefluorography (retired)
+    Value: CF
     Version: '1'
-  CP:
+  Culposcopy:
     Code: 2582160
     Definition: Endoscopic examination of the uterine cervix and vagina.
     Origin: caDSR
-    Value: Culposcopy
+    Value: CP
     Version: '1'
-  CR:
+  Computed Radiography:
     Code: 2582119
     Definition: X-ray imaging that replaces film with a phosphor imaging plate to create
       a digital image.
     Origin: caDSR
-    Value: Computed Radiography
+    Value: CR
     Version: '1'
-  CS:
+  Cystoscopy:
     Code: 2569349
     Definition: Endoscopic examination of the urinary bladder or urethra.
     Origin: caDSR
-    Value: Cystoscopy
+    Value: CS
     Version: '1'
-  CT:
+  COMPUTED TOMOGRAPHY:
     Code: 2575842
     Definition: A method of examining body organs by scanning them with X rays and using
       a computer to construct a series of cross-sectional scans along a single axis.
     Origin: caDSR
-    Value: COMPUTED TOMOGRAPHY
+    Value: CT
     Version: '1'
-  CTPROTOCOL:
+  CT Protocol:
     Code: 12057441
     Definition: The rules and procedures for computed tomography acquisition.
     Origin: caDSR
-    Value: CT Protocol
+    Value: CTPROTOCOL
     Version: '1'
-  DD:
+  Duplex Doppler:
     Code: 2582123
     Definition: An ultrasound technique that uses a B-mode transducer to visualize blood
       flow and a Doppler probe to assess velocity and direction of the blood flow.
     Origin: caDSR
-    Value: Duplex Doppler
+    Value: DD
     Version: '1'
-  DF:
+  Digital fluoroscopy (retired):
     Code: 2582156
     Definition: Digital fluoroscopy (retired)
     Origin: caDSR
-    Value: Digital fluoroscopy (retired)
+    Value: DF
     Version: '1'
-  DG:
+  Diaphanography:
     Code: 2582124
     Definition: Examination of a body part by transillumination.
     Origin: caDSR
-    Value: Diaphanography
+    Value: DG
     Version: '1'
-  DM:
+  Digital microscopy:
     Code: 2582161
     Definition: Microscopy that uses a digital camera instead of eyepieces. The microscope
       is connected to a computer monitor and images are obtained in real time.
     Origin: caDSR
-    Value: Digital microscopy
+    Value: DM
     Version: '1'
-  DMS:
+  Dermoscopy:
     Code: 12057442
     Definition: A noninvasive diagnostic procedure that allows for in vivo microscopic
       examination of the epidermis, the dermoepidermal junction, and the papillary dermis.
       This aids in the identification of specific diagnostic patterns related to color
       and cell structure to aid in differentiating malignant and benign lesions.
     Origin: caDSR
-    Value: Dermoscopy
+    Value: DMS
     Version: '1'
-  DOC:
+  Document:
     Code: 2929970
     Definition: An organized collection of records that describe a particular body of
       data.
     Origin: caDSR
-    Value: Document
+    Value: DOC
     Version: '1'
-  DS:
+  Digital Subtraction Angiography (retired):
     Code: 2582154
     Definition: Digital Subtraction Angiography (retired)
     Origin: caDSR
-    Value: Digital Subtraction Angiography (retired)
+    Value: DS
     Version: '1'
-  DX:
+  Digital Radiography:
     Code: 2582137
     Definition: Acquisition or display of radiographic images using digital techniques.
     Origin: caDSR
-    Value: Digital Radiography
+    Value: DX
     Version: '1'
-  EC:
+  ECHOCARDIOGRAPHY:
     Code: 2566518
     Definition: A procedure that uses ultrasonic waves directed over the chest wall
       to obtain a graphic record of the heart's position, motion of the walls, or internal
       parts such as the valves.
     Origin: caDSR
-    Value: ECHOCARDIOGRAPHY
+    Value: EC
     Version: '1'
-  ECG:
+  Electrocardiography:
     Code: 12060150
     Definition: A procedure that displays the electrical activity of the heart.
     Origin: caDSR
-    Value: Electrocardiography
+    Value: ECG
     Version: '1'
-  EEG:
+  Electroencephalography:
     Code: 6401745
     Definition: The neurophysiologic exploration of the electrical activity of the brain
       by the application of electrodes to the scalp. The resulting traces are known
       as an electroencephalogram (EEG). This test is used to assess brain damage, epilepsy
       and other problems.
     Origin: caDSR
-    Value: Electroencephalography
+    Value: EEG
     Version: '1'
-  EMG:
+  Electromyography:
     Code: 4821875
     Definition: An assessment of skeletal muscle function and nerve control, obtained
       by recording and studying the intrinsic electrical properties of the muscles.
     Origin: caDSR
-    Value: Electromyography
+    Value: EMG
     Version: '1'
-  EOG:
+  Electrooculography:
     Code: 12057566
     Definition: An electrophysiologic test that measures the standing potential between
       the cornea and Bruch's membrane. Primary applications are in ophthalmological
       diagnosis and in recording eye movements.
     Origin: caDSR
-    Value: Electrooculography
+    Value: EOG
     Version: '1'
-  EPS:
+  Cardiac Electrophysiology:
     Code: 2582147
     Definition: A cardiac procedure performed under fluoroscopy to determine the area
       of the heart that is the source of aberrant electrical impulses that give rise
       to arrhythmias. Aberrant pathways can be terminated by ablation.
     Origin: caDSR
-    Value: Cardiac Electrophysiology
+    Value: EPS
     Version: '1'
-  ES:
+  Endoscopy:
     Code: 2558723
     Definition: (en-DAHS-ko-pee) The use of a thin, lighted tube (called an endoscope)
       to examine the inside of the body.
     Origin: caDSR
-    Value: Endoscopy
+    Value: ES
     Version: '1'
-  FA:
+  Fluorescein angiography:
     Code: 2582159
     Definition: A diagnostic procedure that uses the fluorescence of fluorescein dye
       to examine the blood flow in the choroid and retina.
     Origin: caDSR
-    Value: Fluorescein angiography
+    Value: FA
     Version: '1'
-  FID:
+  Fiducial Marker:
     Code: 12057567
     Definition: A medical device placed on or inserted in an anatomic site for accurate
       visualization of a particular area, prior to radiation treatment or surgery. Examples
@@ -947,132 +947,132 @@ Terms:
       in frameless stereotactic brain surgery; and femoral and tibial pins used for
       spatial orientation in total knee replacement.
     Origin: caDSR
-    Value: Fiducial Marker
+    Value: FID
     Version: '1'
-  FS:
+  Fundoscopy:
     Code: 2582162
     Definition: A technique used to examine of the back (fundus) and other anatomical
       structures of the eye with a magnifying instrument.
     Origin: caDSR
-    Value: Fundoscopy
+    Value: FS
     Version: '1'
-  GM:
+  General Microscopy:
     Code: 2582141
     Definition: The use of various technologies to resolve the structure or features
       of objects too small or fine to naturally be seen by eye.
     Origin: caDSR
-    Value: General Microscopy
+    Value: GM
     Version: '1'
-  HC:
+  Hard Copy:
     Code: 2565699
     Definition: A physical, printed version of information from a computer.
     Origin: caDSR
-    Value: Hard Copy
+    Value: HC
     Version: '1'
-  HD:
+  Hemodynamic Waveform:
     Code: 2582148
     Definition: The analysis of hemodynamic pressure changes to obtain diagnostic information
       about the function of the right and left ventricles during systole and diastole.
     Origin: caDSR
-    Value: Hemodynamic Waveform
+    Value: HD
     Version: '1'
-  IO:
+  Intra-oral Radiography:
     Code: 2582139
     Definition: Radiography done within the oral cavity.
     Origin: caDSR
-    Value: Intra-oral Radiography
+    Value: IO
     Version: '1'
-  IOL:
+  Intraocular Lens Power Calculation:
     Code: 12057568
     Definition: Calculations made to determine the required optical power for an intra-ocular
       lens that will be implanted following cataract surgery. Its strength is a factor
       of corneal refractive power, ocular media type, and axial length.
     Origin: caDSR
-    Value: Intraocular Lens Power Calculation
+    Value: IOL
     Version: '1'
-  IVOCT:
+  Intravascular Optical Coherence Tomography:
     Code: 12057569
     Definition: Optical coherence tomography used for imaging within blood vessels.
     Origin: caDSR
-    Value: Intravascular Optical Coherence Tomography
+    Value: IVOCT
     Version: '1'
-  IVUS:
+  Intravascular Ultrasound:
     Code: 2582150
     Definition: An invasive procedure in which sound waves (called ultrasound) are bounced
       off of vascular tissues from within the vessel and the echoes produce a picture
       (sonogram).
     Origin: caDSR
-    Value: Intravascular Ultrasound
+    Value: IVUS
     Version: '1'
-  KER:
+  Keratometry:
     Code: 12057570
     Definition: The measurement of the curvature of the anterior corneal surface.
     Origin: caDSR
-    Value: Keratometry
+    Value: KER
     Version: '1'
-  KO:
+  Key Object Selection:
     Code: 2582153
     Definition: Selection of a key image by the interpreting physician.
     Origin: caDSR
-    Value: Key Object Selection
+    Value: KO
     Version: '1'
-  LEN:
+  Lensometry:
     Code: 12057571
     Definition: The use of a lensometer to determine the optical strength of eye glass
       lenses.
     Origin: caDSR
-    Value: Lensometry
+    Value: LEN
     Version: '1'
-  LP:
+  Laparoscopy:
     Code: 2559024
     Definition: (lap-a-RAHS-ko-pee) The insertion of a thin, lighted tube (called a
       laparoscope) through the abdominal wall to inspect the inside of the abdomen and
       remove tissue samples.
     Origin: caDSR
-    Value: Laparoscopy
+    Value: LP
     Version: '1'
-  LS:
+  Laser surface scan:
     Code: 2582125
     Definition: A method for obtaining information about the surface morphology and
       topology of an object.
     Origin: caDSR
-    Value: Laser surface scan
+    Value: LS
     Version: '1'
-  M3D:
+  Model for 3D Manufacturing:
     Code: 12057573
     Definition: A structural template used as the basis for manufacturing three dimensional
       objects.
     Origin: caDSR
-    Value: Model for 3D Manufacturing
+    Value: M3D
     Version: '1'
-  MA:
+  Magnetic resonance angiography:
     Code: 2582163
     Definition: An image of blood vessels constructed using magnetic resonance imaging.
     Origin: caDSR
-    Value: Magnetic resonance angiography
+    Value: MA
     Version: '1'
-  MG:
+  Mammography:
     Code: 2582138
     Definition: Imaging examination of the breast by means of x-rays.
     Origin: caDSR
-    Value: Mammography
+    Value: MG
     Version: '1'
-  MR:
+  Magnetic Resonance:
     Code: 2582120
     Definition: Imaging that uses radiofrequency waves and a strong magnetic field rather
       than x-rays to provide detailed pictures of internal organs and tissues. The technique
       is valuable for the diagnosis of many pathologic conditions, including cancer,
       heart and vascular disease, stroke, and joint and musculoskeletal disorders.
     Origin: caDSR
-    Value: Magnetic Resonance
+    Value: MR
     Version: '1'
-  MS:
+  Magnetic Resonance Spectroscopy:
     Code: 2576333
     Definition: Magnetic Resonance Spectroscopy
     Origin: caDSR
-    Value: Magnetic Resonance Spectroscopy
+    Value: MS
     Version: '1'
-  NM:
+  Radionuclide Imaging:
     Code: 12103506
     Definition: An imaging technique that uses a small dose of a radioactive chemical
       (isotope) called a tracer that can detect sites of cancer growth, trauma, infection
@@ -1081,15 +1081,15 @@ Terms:
       rays, which are detected by a gamma camera and analyzed by a computer to form
       an image of the target organ.
     Origin: caDSR
-    Value: Radionuclide Imaging
+    Value: NM
     Version: '1'
-  OAM:
+  Ophthalmic Axial Measurement:
     Code: 12057574
     Definition: A method for determining the axial length of the eye.
     Origin: caDSR
-    Value: Ophthalmic Axial Measurement
+    Value: OAM
     Version: '1'
-  OCT:
+  Optical Coherence Tomography:
     Code: 6413980
     Definition: Optical Coherence Tomography (OCT) combines the principles of ultrasound
       with the imaging performance of a microscope. OCT uses infrared light waves that
@@ -1100,79 +1100,79 @@ Terms:
       evaluation of microanatomic structures OCT is also able to provide information
       regarding tissue composition.
     Origin: caDSR
-    Value: Optical Coherence Tomography
+    Value: OCT
     Version: '1'
-  OP:
+  Ophthalmic Photography:
     Code: 2582151
     Definition: Photography used to study and document structures and disorders of the
       eye.
     Origin: caDSR
-    Value: Ophthalmic Photography
+    Value: OP
     Version: '1'
-  OPM:
+  Ophthalmic Mapping:
     Code: 12057575
     Definition: Methods for determining the topography or thickness of parts of the
       eye.
     Origin: caDSR
-    Value: Ophthalmic Mapping
+    Value: OPM
     Version: '1'
-  OPT:
+  Ophthalmic Tomography:
     Code: 12057576
     Definition: The use of optical coherence tomography to obtain images of the eye.
     Origin: caDSR
-    Value: Ophthalmic Tomography
+    Value: OPT
     Version: '1'
-  OPTBSV:
+  Ophthalmic Tomography B-Scan Volume Analysis:
     Code: 12057577
     Definition: An assessment of ocular anatomy as well as any lesions that may be present
       within the eye that utilizes optical coherence tomography at frequencies of 10
       MHz or higher.
     Origin: caDSR
-    Value: Ophthalmic Tomography B-Scan Volume Analysis
+    Value: OPTBSV
     Version: '1'
-  OPTENF:
+  En-face Optical Coherence Tomography:
     Code: 12057578
     Definition: An imaging technique that combines spectral-domain optical coherence
       tomography with transverse confocal analysis, producing transverse images of retinal
       and choroidal layers at a specified depth.
     Origin: caDSR
-    Value: En-face Optical Coherence Tomography
+    Value: OPTENF
     Version: '1'
-  OPV:
+  Static Perimetry:
     Code: 7463355
     Definition: An eye examination technique that utilizes test objects with gradually
       increasing luminance that are positioned at fixed locations across the visual
       field to determine the threshold of visibility.
     Origin: caDSR
-    Value: Static Perimetry
+    Value: OPV
     Version: '1'
-  OSS:
+  Optical Surface Scanner:
     Code: 12057579
     Definition: A device designed for continuous and touchless optical surface scanning
       of a patient's external surfaces for accurate patient positioning.
     Origin: caDSR
-    Value: Optical Surface Scanner
+    Value: OSS
     Version: '1'
-  OT:
+  Other:
     Code: 2559653
     Definition: Different than the one(s) previously specified or mentioned.
     Origin: caDSR
-    Value: Other
+    Value: OT
     Version: '1'
-  PLAN:
+  Planned:
     Code: 2571012
     Definition: Planned; devised, contrived, or formed in design.
     Origin: caDSR
-    Value: Planned
+    Value: PLAN
     Version: '1'
-  POS:
+  Body Position Sensor:
     Code: 12057580
     Definition: A sensor designed to measure the location or orientation of a person
       as compared to a reference point.
     Origin: caDSR
-    Value: Body Position Sensor
+    Value: POS
     Version: '1'
-  PR:
+  Presentation State:
     Code: 2582144
     Definition: An independent DICOM SOP Instance that contains information on how a
       particular image should be displayed. The Presentation State may contain label
@@ -1180,9 +1180,9 @@ Terms:
       (panning) values, rotations or any other visual display element that is defined
       within the DICOM standard.
     Origin: caDSR
-    Value: Presentation State
+    Value: PR
     Version: '1'
-  PT:
+  PET scan:
     Code: 2581621
     Definition: A technique for measuring the gamma radiation produced by collisions
       of electrons and positrons (anti-electrons) within living tissue. In positron
@@ -1194,111 +1194,111 @@ Terms:
       and positrons is detected by a scanner, revealing in fine detail the tissue location
       of the metabolically-active substance administered.
     Origin: caDSR
-    Value: PET scan
+    Value: PT
     Version: '1'
-  PX:
+  Panoramic X-Ray:
     Code: 2582140
     Definition: A panoramic or wide-view x-ray of the upper and lower jaw and teeth.
     Origin: caDSR
-    Value: Panoramic X-Ray
+    Value: PX
     Version: '1'
-  REG:
+  Image Registration:
     Code: 12057582
     Definition: The process of transforming sets of image data from different times
       or perspectives into one coordinate system.
     Origin: caDSR
-    Value: Image Registration
+    Value: REG
     Version: '1'
-  RESP:
+  Respiratory Waveform:
     Code: 12057587
     Definition: A graphical representation of the breathing pattern in a patient.
     Origin: caDSR
-    Value: Respiratory Waveform
+    Value: RESP
     Version: '1'
-  RF:
+  Radio Fluoroscopy:
     Code: 2582130
     Definition: Examination of the tissues and deep structures of the body by x-ray,
       using the fluoroscope, a device that produces an image when x-rays strike a fluorescent
       screen.
     Origin: caDSR
-    Value: Radio Fluoroscopy
+    Value: RF
     Version: '1'
-  RG:
+  Radiographic imaging:
     Code: 2582126
     Definition: A radiographic procedure using the emission of x-rays to form an image
       of the structure penetrated by the radiation.
     Origin: caDSR
-    Value: Radiographic imaging
+    Value: RG
     Version: '1'
-  RTDOSE:
+  Radiotherapy Dose:
     Code: 2582133
     Definition: The amount of radiation administered during a therapy session.
     Origin: caDSR
-    Value: Radiotherapy Dose
+    Value: RTDOSE
     Version: '1'
-  RTIMAGE:
+  Radiotherapy Image:
     Code: 2582132
     Definition: An image produced on a radiosensitive surface by x-ray radiation that
       has penetrated and passed through a structure.
     Origin: caDSR
-    Value: Radiotherapy Image
+    Value: RTIMAGE
     Version: '1'
-  RTPLAN:
+  Radiotherapy Plan:
     Code: 2582135
     Definition: The design for radiation therapy.
     Origin: caDSR
-    Value: Radiotherapy Plan
+    Value: RTPLAN
     Version: '1'
-  RTRECORD:
+  RT Treatment Record:
     Code: 2582136
     Definition: A record generated from radiation therapy.
     Origin: caDSR
-    Value: RT Treatment Record
+    Value: RTRECORD
     Version: '1'
-  RTSTRUCT:
+  Radiotherapy Structure Set:
     Code: 2582134
     Definition: An object of the DICOM standard used for the transfer of patient structures
       and related data defined on CT scanners, virtual simulation workstations, treatment
       planning systems and similar devices.
     Origin: caDSR
-    Value: Radiotherapy Structure Set
+    Value: RTSTRUCT
     Version: '1'
-  RWV:
+  Real World Value Mapping:
     Code: 12057589
     Definition: The representation of the stored pixel values of referenced images into
       some Real World value in defined units. This allows the capture of retrospectively
       determined mappings, e.g., for values that cannot be determined at the time of
       image acquisition and encoding.
     Origin: caDSR
-    Value: Real World Value Mapping
+    Value: RWV
     Version: '1'
-  SEG:
+  Image Segmentation:
     Code: 2985472
     Definition: The process of assigning a label to every pixel in an image such that
       pixels with the same label share certain visual characteristics, allowing the
       image to be partitioned into multiple segments (e.g., boundaries, lines, curves).
     Origin: caDSR
-    Value: Image Segmentation
+    Value: SEG
     Version: '1'
-  SM:
+  Slide Microscopy:
     Code: 2582142
     Definition: Microscopy that uses a sample affixed to a slide.
     Origin: caDSR
-    Value: Slide Microscopy
+    Value: SM
     Version: '1'
-  SMR:
+  Stereometric Relationship:
     Code: 2582152
     Definition: Pairs of images that may be viewed together in stereo.
     Origin: caDSR
-    Value: Stereometric Relationship
+    Value: SMR
     Version: '1'
-  SR:
+  SR Document:
     Code: 2582149
     Definition: A document type consisting of a document header and a document body.
     Origin: caDSR
-    Value: SR Document
+    Value: SR
     Version: '1'
-  SRF:
+  Subjective Refraction:
     Code: 12057623
     Definition: A technique of determining the combination of spherical and cylindrical
       lenses that will result in the best-corrected visual acuity. The process involves
@@ -1306,69 +1306,69 @@ Terms:
       of lenses and alters the power of the lenses in the trial frames according to
       the patient's subjective responses regarding improvements to their vision.
     Origin: caDSR
-    Value: Subjective Refraction
+    Value: SRF
     Version: '1'
-  ST:
+  Single-photon emission computed:
     Code: 2582127
     Definition: A type of tomography in which gamma photon-emitting radionuclides are
       administered to the patient and then detected by one or more gamma cameras rotated
       around the patient. From the series of two-dimensional images produced, a three-dimensional
       image can be created by computer reconstruction.
     Origin: caDSR
-    Value: Single-photon emission computed
+    Value: ST
     Version: '1'
-  STAIN:
+  Automated Slide Stainer:
     Code: 12057624
     Definition: An instrument designed to automate the process of staining specimens
       affixed to slides.
     Origin: caDSR
-    Value: Automated Slide Stainer
+    Value: STAIN
     Version: '1'
-  TEXTUREMAP:
+  Texture Map:
     Code: 12057625
     Definition: A two-dimensional image file that stores information describing surface
       texture details across a specimen or image.
     Origin: caDSR
-    Value: Texture Map
+    Value: TEXTUREMAP
     Version: '1'
-  TG:
+  Thermal Tomography:
     Code: 2582128
     Definition: Computed tomography that describes temperature details across a surface.
     Origin: caDSR
-    Value: Thermal Tomography
+    Value: TG
     Version: '1'
-  US:
+  Ultrasound:
     Code: 2580423
     Definition: A technique in which high-frequency sound waves are bounced off internal
       organs and the echo pattern is converted into a 2 dimensional picture of the structures
       beneath the transducer.
     Origin: caDSR
-    Value: Ultrasound
+    Value: US
     Version: '1'
-  VA:
+  Visual Acuity:
     Code: 12057626
     Definition: Sharpness of vision, the ability to discern fine detail.
     Origin: caDSR
-    Value: Visual Acuity
+    Value: VA
     Version: '1'
-  VF:
+  Videofluorography (retired):
     Code: 2582157
     Definition: Videofluorography (retired)
     Origin: caDSR
-    Value: Videofluorography (retired)
+    Value: VF
     Version: '1'
-  XA:
+  X-Ray Angiography:
     Code: 2582129
     Definition: The X-ray examination of the blood vessels or chambers of the heart.
     Origin: caDSR
-    Value: X-Ray Angiography
+    Value: XA
     Version: '1'
-  XC:
+  External-camera Photography:
     Code: 2582143
     Definition: Photographic image acquisition using a camera mounted externally from
       the subject.
     Origin: caDSR
-    Value: External-camera Photography
+    Value: XC
     Version: '1'
 # environmental exposure type
   Asbestos Exposure:
