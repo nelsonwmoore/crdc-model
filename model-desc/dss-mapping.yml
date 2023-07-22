@@ -230,10 +230,10 @@ Props:
     Program Name:
       GDC:
         - name:
-            Parents: Program
+            Parents: program
       ICDC:
         - program_name:
-            Parents: Program
+            Parents: program
       IDC:
         - Program:
             Parents: TCIA
@@ -258,7 +258,7 @@ Props:
     Project Name:
       GDC:
         - name:
-            Parents: Project
+            Parents: project
       # IDC:
       #   - collection_id:
       #       Parents: TCIA # TBD: see RFC comment?
@@ -305,13 +305,13 @@ Props:
     Subject Age At Diagnosis:
       GDC:
         - age_at_diagnosis:
-            Parents: Diagnosis
+            Parents: diagnosis
       PDC:
         - age_at_diagnosis:
-            Parents: Diagnosis
+            Parents: diagnosis
       CDS:
         - age_at_diagnosis:
-            Parents: Additional Diagnosis Information
+            Parents: diagnosis
       HTAN:
         - age_at_diagnosis:
             Parents: Diagnosis
@@ -321,7 +321,7 @@ Props:
             Parents: case
       GDC:
         - race:
-            Parents: Demographic
+            Parents: demographic
       IDC:
         - EthnicGroup:
             Parents: PatientModule
@@ -330,7 +330,7 @@ Props:
             Parents: Demographic
       CDS:
         - race:
-            Parents: Subject
+            Parents: participant
       HTAN:
         - Race:
             Parents: Demographics
@@ -343,13 +343,13 @@ Props:
             Parents: case
       GDC:
         - ethnicity:
-            Parents: Demographic
+            Parents: demographic
       PDC:
         - ethnicity:
             Parents: Demographic
       CDS:
         - ethnicity:
-            Parents: Subject
+            Parents: participant
       HTAN:
         - Ethnicity:
             Parents: Demographics
@@ -364,11 +364,11 @@ Props:
     Days from Diagnosis to Specimen Collection:
       GDC:
         - days_to_collection:
-            Parents: Sample
+            Parents: sample
     Days from First Subject Visit to Specimen Collection:
       GDC:
         - days_to_collection:
-            Parents: Sample
+            Parents: sample
     Days from First Treatment to Specimen Collection:
       GDC:
         - days_to_collection:
@@ -376,21 +376,21 @@ Props:
     Days from Initial Genomic Sequencing to Specimen Collection:
       GDC:
         - days_to_collection:
-            Parents: Sample
+            Parents: sample
     Days from Recurrence to Specimen Collection:
       GDC:
         - days_to_collection:
-            Parents: Sample
+            Parents: sample
     ICD-O-3 Morphology Code:
       GDC:
         - morphology:
-            Parents: Diagnosis
+            Parents: diagnosis
       PDC:
         - morphology:
             Parents: Diagnosis
       CDS:
         - morphology:
-            Parents: Additional Diagnosis Information
+            Parents: diagnosis
       HTAN:
         - Morphology:
             Parents: Diagnosis
@@ -403,7 +403,7 @@ Props:
             Parents: sample
       GDC:
         - longest_dimension:
-            Parents: Sample
+            Parents: sample
       PDC:
         - longest_dimension:
             Parents: Sample
@@ -413,14 +413,14 @@ Props:
             Parents: sample
       GDC:
         - shortest_dimension:
-            Parents: Sample
+            Parents: sample
       PDC:
         - shortest_dimension:
             Parents: Sample
     Uberon Specimen Anatomic Site Identifier:
       GDC:
         - biospecimen_anatomic_site:
-            Parents: Sample
+            Parents: sample
       ICDC:
         - sample_site:
             Parents: sample
@@ -429,7 +429,7 @@ Props:
             Parents: Sample
       CDS:
         - sample_anatomic_site:
-            Parents: Additional Sample Information
+            Parents: sample
       C2M2:
         - anatomy:
             Parents: biosample
@@ -440,7 +440,7 @@ Props:
     ICD-10-CM Disease Code:
       GDC:
         - icd_10_code:
-            Parents: Diagnosis
+            Parents: diagnosis
       PDC:
         - icd_10_code:
             Parents: Diagnosis
@@ -456,7 +456,7 @@ Props:
     ICD-O-3 Primary Site Code:
       GDC:
         - primary_site:
-            Parents: Case
+            Parents: case
       ICDC:
         - primary_disease_site:
             Parents: Diagnosis
@@ -465,23 +465,23 @@ Props:
             Parents: Case
       CDS:
         - primary_site:
-            Parents: Diagnosis
+            Parents: diagnosis
       mCODE:
         - Body Site:
             Parents: Primary Cancer Condition Profile
     Tumor Grade:
       GDC:
         - tumor_grade:
-            Parents: Diagnosis
+            Parents: diagnosis
       PDC:
         - tumor_grade:
             Parents: Diagnosis
       ICDC:
         - histological_grade:
-            Parents: Diagnosis
+            Parents: diagnosis
       CDS:
         - tumor_grade:
-            Parents: Additional Diagnosis Information
+            Parents: diagnosis
       HTAN:
         - tumor_grade:
             Parents: Diagnosis
@@ -504,9 +504,9 @@ Props:
             Parents: ihc_assay_report
       GDC:
         - gene_symbol:
-            Parents: MolecularTest
+            Parents: molecular_test
         - second-gene_symbol:
-            Parents: MolecularTest
+            Parents: molecular_test
       PDC:
         - gene_name:
             Parents: Gene
@@ -522,7 +522,7 @@ Props:
     DICOM Modality Type:
       GDC:
         - imaging_type:
-            Parents: Follow-Up
+            Parents: follow_up
       PDC:
         - imaging_type:
             Parents: Follow-Up
@@ -538,7 +538,101 @@ Props:
     Environmental Exposure Type:
       GDC:
         - exposure_type:
-            Parents: Exposure
+            Parents: exposure
       PDC:
         - exposure_type:
             Parents: Exposure
+# Terms:
+  # uberon specimen anatomic site identifier:
+    # adrenal gland:
+      # gdc:
+        # - adrenal:
+            # parents: biospecimen_anatomic_site
+      # icdc:
+        # - adrenal:
+            # parents: sample_site
+    # lymph node(s) popliteal:
+      # gdc:
+        # - lymph node(s) popliteal:
+            # parents: biospecimen_anatomic_site
+      # icdc:
+        # - lymph node, popliteal:
+            # parents: sample_site
+    # thyroid gland:
+      # gdc:
+        # - thyroid:
+            # parents: biospecimen_anatomic_site
+      # icdc:
+        # - thyroid gland:
+            # parents: sample_site
+  # tumor grade:
+    # g1:
+      # gdc:
+        # - g1:
+            # parents: tumor_grade
+      # icdc:
+        # - "1":
+            # parents: tumor_grade
+    # g2:
+      # gdc:
+        # - g2:
+            # parents: tumor_grade
+      # icdc:
+        # - "2":
+            # parents: tumor_grade
+    # g3:
+      # gdc:
+        # - g3:
+            # parents: tumor_grade
+      # icdc:
+        # - "3":
+            # parents: tumor_grade
+    # g4:
+      # gdc:
+        # - g4:
+            # parents: tumor_grade
+      # icdc:
+        # - "4":
+            # parents: tumor_grade
+    # gb:
+      # gdc:
+        # - gb:
+            # parents: tumor_grade
+    # gx:
+      # gdc:
+        # - gx:
+            # parents: tumor_grade
+    # high grade:
+      # gdc:
+        # - high grade:
+            # parents: tumor_grade
+      # icdc:
+        # - high:
+            # parents: tumor_grade
+    # intermediate grade:
+      # gdc:
+        # - intermediate grade:
+            # parents: tumor_grade
+      # icdc:
+        # - medium:
+            # parents: tumor_grade
+    # low grade:
+      # gdc:
+        # - low grade:
+            # parents: tumor_grade
+      # icdc:
+        # - low:
+            # parents: tumor_grade
+    # not reported:
+      # gdc:
+        # - not reported:
+            # parents: tumor_grade
+      # icdc:
+        # - unknown:
+            # parents: tumor_grade
+    # not applicable:
+        # - not applicable:
+            # parents: tumor_grade
+      # icdc:
+        # - not applicable:
+            # parents: tumor_grade
