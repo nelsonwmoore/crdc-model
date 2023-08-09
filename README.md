@@ -1,2 +1,2 @@
-# dss-model
-WIP DSS Model &amp; Mappings for MDB
+# dss-classification-scheme
+Data Standards Services (DSS) Classification Scheme and Cross-Model Mappings for MDB
