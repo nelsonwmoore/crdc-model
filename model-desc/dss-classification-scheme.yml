@@ -28,8 +28,8 @@ Nodes:
     - days_from_specimen_collection_to_initial_pathologic_diagnosis
   diagnosis:
     Props:
-    - icd-10-cm_disease_code
-    - icd-o-3_primary_site_code
+    - icd_10_cm_disease_code
+    - icd_o_3_primary_site_code
     - tumor_grade
   molecular:
     Props:
@@ -42,7 +42,7 @@ Nodes:
     - days_from_first_treatment_to_specimen_collection
     - days_from_initial_genomic_sequencing_to_specimen_collection
     - days_from_recurrence_to_specimen_collection
-    - icd-o-3_morphology_code
+    - icd_o_3_morphology_code
     - specimen_longest_dimension
     - specimen_shortest_dimension
     - uberon_specimen_anatomic_site_identifier

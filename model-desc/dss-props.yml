@@ -9,7 +9,7 @@ PropDefinitions:
     Term:
     - Code: '11475057'
       Origin: caDSR
-      Value: data_file_checksum_type
+      Value: Data File Checksum Type
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11475057%20and%20ver_nr=1
   data_file_checksum_value:
     Code: '11480133'
@@ -19,20 +19,20 @@ PropDefinitions:
     Term:
     - Code: '11480133'
       Origin: caDSR
-      Value: data_file_checksum_value
+      Value: Data File Checksum Value
     Type: string
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11480133%20and%20ver_nr=1
   data_file_compression_status:
     Code: '11387114'
     Desc: The state of data when saved to storage space or during data transmission.
     Enum:
-    - unknown
-    - compressed
-    - uncompressed
+    - Unknown
+    - Compressed
+    - Uncompressed
     Term:
     - Code: '11387114'
       Origin: caDSR
-      Value: data_file_compression_status
+      Value: Data File Compression Status
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11387114%20and%20ver_nr=1
   data_file_description:
     Code: '11280338'
@@ -41,7 +41,7 @@ PropDefinitions:
     Term:
     - Code: '11280338'
       Origin: caDSR
-      Value: data_file_description
+      Value: Data File Description
     Type: string
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11280338%20and%20ver_nr=1
   data_file_format:
@@ -115,7 +115,7 @@ PropDefinitions:
     Term:
     - Code: '11416926'
       Origin: caDSR
-      Value: data_file_format
+      Value: Data File Format
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11416926%20and%20ver_nr=1
   data_file_name:
     Code: '11284037'
@@ -123,7 +123,7 @@ PropDefinitions:
     Term:
     - Code: '11284037'
       Origin: caDSR
-      Value: data_file_name
+      Value: Data File Name
     Type: string
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11284037%20and%20ver_nr=1
   data_file_size:
@@ -133,7 +133,7 @@ PropDefinitions:
     Term:
     - Code: '11479876'
       Origin: caDSR
-      Value: data_file_size
+      Value: Data File Size
     Type: integer
     Units: bytes
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11479876%20and%20ver_nr=1
@@ -144,7 +144,7 @@ PropDefinitions:
     Term:
     - Code: '11248865'
       Origin: caDSR
-      Value: days_from_diagnosis_to_specimen_collection
+      Value: Days from Diagnosis to Specimen Collection
     Type: integer
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11248865%20and%20ver_nr=1
   days_from_first_subject_visit_to_specimen_collection:
@@ -154,7 +154,7 @@ PropDefinitions:
     Term:
     - Code: '11248874'
       Origin: caDSR
-      Value: days_from_first_subject_visit_to_specimen_collection
+      Value: Days from First Subject Visit to Specimen Collection
     Type: integer
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11248874%20and%20ver_nr=1
   days_from_first_treatment_to_specimen_collection:
@@ -164,7 +164,7 @@ PropDefinitions:
     Term:
     - Code: '11250807'
       Origin: caDSR
-      Value: days_from_first_treatment_to_specimen_collection
+      Value: Days from First Treatment to Specimen Collection
     Type: integer
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11250807%20and%20ver_nr=1
   days_from_initial_genomic_sequencing_to_specimen_collection:
@@ -174,7 +174,7 @@ PropDefinitions:
     Term:
     - Code: '11251130'
       Origin: caDSR
-      Value: days_from_initial_genomic_sequencing_to_specimen_collection
+      Value: Days from Initial Genomic Sequencing to Specimen Collection
     Type: integer
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11251130%20and%20ver_nr=1
   days_from_recurrence_to_specimen_collection:
@@ -184,7 +184,7 @@ PropDefinitions:
     Term:
     - Code: '11251133'
       Origin: caDSR
-      Value: days_from_recurrence_to_specimen_collection
+      Value: Days from Recurrence to Specimen Collection
     Type: integer
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11251133%20and%20ver_nr=1
   days_from_specimen_collection_to_initial_pathologic_diagnosis:
@@ -194,7 +194,7 @@ PropDefinitions:
     Term:
     - Code: '11253404'
       Origin: caDSR
-      Value: days_from_specimen_collection_to_initial_pathologic_diagnosis
+      Value: Days from Specimen Collection to Initial Pathologic Diagnosis
     Type: integer
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11253404%20and%20ver_nr=1
   dicom_modality_type:
@@ -283,7 +283,7 @@ PropDefinitions:
     - PLAN
     - POS
     - REG
-    - Respiratory Waveform
+    - RESP
     - RWV
     - SEG
     - SRF
@@ -295,7 +295,7 @@ PropDefinitions:
     Term:
     - Code: '12137353'
       Origin: caDSR
-      Value: dicom_modality_type
+      Value: DICOM Modality Type
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=12137353%20and%20ver_nr=1
   environmental_exposure_type:
     Code: '11256813'
@@ -316,7 +316,7 @@ PropDefinitions:
     Term:
     - Code: '11256813'
       Origin: caDSR
-      Value: environmental_exposure_type
+      Value: Environmental Exposure Type
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11256813%20and%20ver_nr=1
   hgnc_gene_identifier:
     Code: '12461467'
@@ -327,9 +327,9 @@ PropDefinitions:
     Term:
     - Code: '12461467'
       Origin: caDSR
-      Value: hgnc_gene_identifier
+      Value: HGNC Gene Identifier
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=12461467%20and%20ver_nr=1
-  icd-10-cm_disease_code:
+  icd_10_cm_disease_code:
     Code: '11479873'
     Desc: An alphanumeric value from the tenth version of the International Classification
       of Disease (ICD-10-CM, the disease code subset of ICD-10) used to identify the
@@ -339,9 +339,9 @@ PropDefinitions:
     Term:
     - Code: '11479873'
       Origin: caDSR
-      Value: icd-10-cm_disease_code
+      Value: ICD-10-CM Disease Code
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11479873%20and%20ver_nr=1
-  icd-o-3_morphology_code:
+  icd_o_3_morphology_code:
     Code: '11326261'
     Desc: The microscopic anatomy of normal and abnormal cells and tissues of the
       specimen as captured in the morphology codes of the International Classification
@@ -351,9 +351,9 @@ PropDefinitions:
     Term:
     - Code: '11326261'
       Origin: caDSR
-      Value: icd-o-3_morphology_code
+      Value: ICD-O-3 Morphology Code
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11326261%20and%20ver_nr=1
-  icd-o-3_primary_site_code:
+  icd_o_3_primary_site_code:
     Code: '11341616'
     Desc: The organ or part of the body where cancer begins as captured by the topography
       codes of the International Classification of Diseases for Oncology, 3rd Edition
@@ -363,7 +363,7 @@ PropDefinitions:
     Term:
     - Code: '11341616'
       Origin: caDSR
-      Value: icd-o-3_primary_site_code
+      Value: ICD-O-3 Primary Site Code
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11341616%20and%20ver_nr=1
   ncbi_taxonomy_id:
     Code: '10543100'
@@ -373,7 +373,7 @@ PropDefinitions:
     Term:
     - Code: '10543100'
       Origin: caDSR
-      Value: ncbi_taxonomy_id
+      Value: NCBI Taxonomy ID
     Type: integer
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=10543100%20and%20ver_nr=1
   principal_investigator_first_name:
@@ -383,7 +383,7 @@ PropDefinitions:
     Term:
     - Code: '10624731'
       Origin: caDSR
-      Value: principal_investigator_first_name
+      Value: Principal Investigator First Name
     Type: string
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=10624731%20and%20ver_nr=1
   principal_investigator_last_name:
@@ -393,7 +393,7 @@ PropDefinitions:
     Term:
     - Code: '10624733'
       Origin: caDSR
-      Value: principal_investigator_last_name
+      Value: Principal Investigator Last Name
     Type: string
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=10624733%20and%20ver_nr=1
   principal_investigator_middle_name:
@@ -403,7 +403,7 @@ PropDefinitions:
     Term:
     - Code: '10624732'
       Origin: caDSR
-      Value: principal_investigator_middle_name
+      Value: Principal Investigator Middle Name
     Type: string
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=10624732%20and%20ver_nr=1
   principal_investigator_orcid_id:
@@ -413,7 +413,7 @@ PropDefinitions:
     Term:
     - Code: '10624734'
       Origin: caDSR
-      Value: principal_investigator_orcid_id
+      Value: Principal Investigator ORCID ID
     Type: string
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=10624734%20and%20ver_nr=1
   program_name:
@@ -424,7 +424,7 @@ PropDefinitions:
     Term:
     - Code: '11444542'
       Origin: caDSR
-      Value: program_name
+      Value: Program Name
     Type: string
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11444542%20and%20ver_nr=1
   program_short_name:
@@ -435,7 +435,7 @@ PropDefinitions:
     Term:
     - Code: '11459801'
       Origin: caDSR
-      Value: program_short_name
+      Value: Program Short Name
     Type: string
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11459801%20and%20ver_nr=1
   project_name:
@@ -446,7 +446,7 @@ PropDefinitions:
     Term:
     - Code: '11459804'
       Origin: caDSR
-      Value: project_name
+      Value: Project Name
     Type: string
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11459804%20and%20ver_nr=1
   project_short_name:
@@ -457,15 +457,17 @@ PropDefinitions:
     Term:
     - Code: '11459806'
       Origin: caDSR
-      Value: project_short_name
+      Value: Project Short Name
     Type: string
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11459806%20and%20ver_nr=1
   specimen_longest_dimension:
+    Code: '5432602'
     Desc: Numeric value that represents the longest dimension of the sample, measured
       in millimeters.
     Term:
-    - Origin: caDSR
-      Value: specimen_longest_dimension
+    - Code: '5432602'
+      Origin: caDSR
+      Value: Specimen Longest Dimension
     Type: integer
     Units: millimeters
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=5432602%20and%20ver_nr=1
@@ -476,7 +478,7 @@ PropDefinitions:
     Term:
     - Code: '5432603'
       Origin: caDSR
-      Value: specimen_shortest_dimension
+      Value: Specimen Shortest Dimension
     Type: integer
     Units: millimeters
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=5432603%20and%20ver_nr=1
@@ -488,7 +490,7 @@ PropDefinitions:
     Term:
     - Code: '11459810'
       Origin: caDSR
-      Value: study_name
+      Value: Study Name
     Type: string
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11459810%20and%20ver_nr=1
   study_short_name:
@@ -498,7 +500,7 @@ PropDefinitions:
     Term:
     - Code: '11459812'
       Origin: caDSR
-      Value: study_short_name
+      Value: Study Short Name
     Type: string
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11459812%20and%20ver_nr=1
   subject_age_at_diagnosis:
@@ -507,7 +509,7 @@ PropDefinitions:
     Term:
     - Code: '10609539'
       Origin: caDSR
-      Value: subject_age_at_diagnosis
+      Value: Subject Age At Diagnosis
     Type: integer
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=10609539%20and%20ver_nr=1
   subject_race:
@@ -526,7 +528,7 @@ PropDefinitions:
     Term:
     - Code: '2192199'
       Origin: caDSR
-      Value: subject_race
+      Value: Subject Race
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=2192199%20and%20ver_nr=1
   subject_reported_ethnicity:
     Code: '2192217'
@@ -541,7 +543,7 @@ PropDefinitions:
     Term:
     - Code: '2192217'
       Origin: caDSR
-      Value: subject_reported_ethnicity
+      Value: Subject Reported Ethnicity
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=2192217%20and%20ver_nr=1
   tumor_grade:
     Code: '11325685'
@@ -562,7 +564,7 @@ PropDefinitions:
     Term:
     - Code: '11325685'
       Origin: caDSR
-      Value: tumor_grade
+      Value: Tumor Grade
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=11325685%20and%20ver_nr=1
   uberon_specimen_anatomic_site_identifier:
     Code: '12083894'
@@ -573,5 +575,5 @@ PropDefinitions:
     Term:
     - Code: '12083894'
       Origin: caDSR
-      Value: uberon_specimen_anatomic_site_identifier
+      Value: Uberon Specimen Anatomic Site Identifier
     Url: https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=12083894%20and%20ver_nr=1

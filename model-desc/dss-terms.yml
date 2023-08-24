@@ -463,7 +463,7 @@ Terms:
     Origin: caDSR
     Value: GB
     Version: '1'
-  gct/res_format:
+  gct_res_format:
     Code: 11422066
     Definition: A tab-delimited text file that contains gene expression data as a
       column for each sample, a row for each gene, and an expression value for each
@@ -546,7 +546,7 @@ Terms:
     Origin: caDSR
     Value: HDF5
     Version: '1'
-  hgnc_(by_reference):
+  hgnc_by_reference:
     Code: 12126009
     Definition: The worldwide authority that assigns standardized nomenclature to
       human genes. The HUGO Gene Nomenclature Committee is responsible for approving
@@ -581,7 +581,7 @@ Terms:
     Origin: caDSR
     Value: HTML
     Version: '1'
-  icd-10-cm_(by_reference):
+  icd_10_cm_by_reference:
     Code: 6356782
     Definition: An extension of the ICD-10 created by the U.S. National Center for
       Health Statistics so that the system could be used to capture more morbidity
@@ -589,7 +589,7 @@ Terms:
     Origin: caDSR
     Value: ICD-10-CM (By Reference)
     Version: '1'
-  icd-o-3_(by_reference):
+  icd_o_3_by_reference:
     Code: 12126010
     Definition: The third edition of the International Classification of Diseases
       for Oncology, published in 2000, used principally in tumor and cancer registries
@@ -732,7 +732,7 @@ Terms:
     Origin: caDSR
     Value: MAF
     Version: '1'
-  mage-tab:
+  mage_tab:
     Code: 2953599
     Definition: A tab-delimited, spreadsheet-based format that can be used for annotating
       and communicating microarray data in a MIAME (Minimum Information About a Microarray
@@ -773,7 +773,7 @@ Terms:
     Origin: caDSR
     Value: MG
     Version: '1'
-  mpeg-4:
+  mpeg_4:
     Code: 11422141
     Definition: A multimedia file that is commonly used to store video and audio data.
     Origin: caDSR
@@ -883,7 +883,7 @@ Terms:
     Origin: caDSR
     Value: OCT
     Version: '1'
-  ome-tiff:
+  ome_tiff:
     Code: 11422196
     Definition: A tagged image file format (TIFF) image file format that contains
       an Open Microscopy Environment (OME) XML metadata block in the file header for
@@ -1291,7 +1291,7 @@ Terms:
     Origin: caDSR
     Value: TXT
     Version: '1'
-  uberon_(by_reference):
+  uberon_by_reference:
     Code: 12126011
     Definition: An integrated cross-species anatomy ontology representing a variety
       of entities classified according to traditional anatomical criteria such as

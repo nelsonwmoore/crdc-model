@@ -350,7 +350,7 @@ Props:
       - ethnicity:
           Parents: Demographic
   diagnosis:
-    icd-10-cm_disease_code:
+    icd_10_cm_disease_code:
       C2M2:
       - id:
           Parents: disease
@@ -366,7 +366,7 @@ Props:
       mCODE:
       - Code:
           Parents: Primary Cancer Condition Profile
-    icd-o-3_primary_site_code:
+    icd_o_3_primary_site_code:
       CDS:
       - primary_site:
           Parents: diagnosis
@@ -456,7 +456,7 @@ Props:
       PDC:
       - days_to_collection:
           Parents: Sample
-    icd-o-3_morphology_code:
+    icd_o_3_morphology_code:
       CDS:
       - morphology:
           Parents: diagnosis
