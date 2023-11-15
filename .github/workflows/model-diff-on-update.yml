@@ -1,0 +1,43 @@
+name: Model Diff on Update
+on:
+  workflow_dispatch:
+    inputs:
+      model_handle:
+        description: "Data model handle (e.g. GDC)"
+        required: true
+      prev_model_files:
+        description: "Prev model file names to compare"
+        required: true
+        default: |
+          dss-classification-scheme.yml dss-props.yml dss-terms.yml
+      new_model_files:
+        description: "New model file names to compare"
+        required: true
+        default: |
+          dss-classification-scheme.yml dss-props.yml dss-terms.yml
+      model_directory:
+        description: "Directory containing model files"
+        required: true
+        default: model-desc
+      prev_ref:
+        description: "Previous commit ref to check out"
+        required: true
+      new_ref:
+        description: "New commit ref to check out"
+        required: true
+        
+
+jobs:
+  model-diff:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Model Diff
+        id: get-diff
+        uses: CBIIT/bento-workflows/.github/workflows/model-diff.yml@v2.2.11
+        with:
+          model_handle: ${{ inputs.model_handle }}
+          model_directory: ${{ inputs.model_directory }}
+          prev_model_files: ${{ inputs.prev_model_files }}
+          new_model_files: ${{ inputs.new_model_files }}          
+          prev_ref: ${{ inputs.prev_ref }}
+          new_ref: ${{ inputs.new_ref }}
