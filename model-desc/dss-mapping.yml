@@ -358,14 +358,14 @@ Props:
       - icd_10_code:
           Parents: diagnosis
       HTAN:
-      - icd_10_code:
+      - PrimaryDiagnosis:
           Parents: Diagnosis
       PDC:
       - icd_10_code:
           Parents: Diagnosis
       mCODE:
-      - Code:
-          Parents: Primary Cancer Condition Profile
+      - code:
+          Parents: primary_cancer_condition_profile
     icd_o_3_primary_site_code:
       CDS:
       - primary_site:
@@ -464,14 +464,14 @@ Props:
       - morphology:
           Parents: diagnosis
       HTAN:
-      - Morphology:
+      -  Morphology:
           Parents: Diagnosis
       PDC:
       - morphology:
           Parents: Diagnosis
       mCODE:
-      - Histology Morphology Behavior:
-          Parents: Primary Cancer Condition Profile
+      - histology_morphology_behavior:
+          Parents: primary_cancer_condition_profile
     specimen_longest_dimension:
       GDC:
       - longest_dimension:
