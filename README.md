@@ -1,2 +1,2 @@
-# dss-classification-scheme
-Data Standards Services (DSS) Classification Scheme and Cross-Model Mappings for MDB
+# crdc-model
+CRDC CDEs and Data Standards Services (DSS) Cross-Model Mappings for MDB
