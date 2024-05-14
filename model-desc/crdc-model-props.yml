@@ -1,0 +1,1323 @@
+PropDefinitions:
+    Body Part Examined Anatomic Site UBERON Identifier:
+        Desc: The UBERON identifier of the organ or part of the body assessed.
+        Term:
+        -   Code: '14883072'
+            Definition: The UBERON identifier of the organ or part of the body assessed.
+            Handle: Body Part Examined Anatomic Site UBERON Identifier
+            Origin: caDSR
+            Value: Body Part Examined Anatomic Site UBERON Identifier
+        Type: TBD
+    DICOM Modality Type:
+        Desc: The specific manner, characteristic, pattern or function, method or
+            process, or devices that created the data.
+        Enum:
+        - AR
+        - AS
+        - ASMT
+        - AU
+        - BDUS
+        - BI
+        - BMD
+        - CD
+        - CF
+        - CP
+        - CR
+        - CS
+        - CT
+        - CTPROTOCOL
+        - DD
+        - DF
+        - DG
+        - DM
+        - DMS
+        - DOC
+        - DS
+        - DX
+        - EC
+        - ECG
+        - EEG
+        - EMG
+        - EOG
+        - EPS
+        - ES
+        - FA
+        - FID
+        - FS
+        - GM
+        - HC
+        - HD
+        - IO
+        - IOL
+        - IVOCT
+        - IVUS
+        - KER
+        - KO
+        - LEN
+        - LP
+        - LS
+        - M3D
+        - MA
+        - MG
+        - MR
+        - MS
+        - NM
+        - OAM
+        - OCT
+        - OP
+        - OPM
+        - OPT
+        - OPTBSV
+        - OPTENF
+        - OPV
+        - OSS
+        - OT
+        - PLAN
+        - POS
+        - PR
+        - PT
+        - PX
+        - REG
+        - RESP
+        - RF
+        - RG
+        - RTDOSE
+        - RTIMAGE
+        - RTPLAN
+        - RTRECORD
+        - RTSTRUCT
+        - RWV
+        - SEG
+        - SM
+        - SMR
+        - SR
+        - SRF
+        - ST
+        - STAIN
+        - TEXTUREMAP
+        - TG
+        - US
+        - VA
+        - VF
+        - XA
+        - XC
+        Term:
+        -   Code: '12137353'
+            Definition: The specific manner, characteristic, pattern or function,
+                method or process, or devices that created the data.
+            Handle: DICOM Modality Type
+            Origin: caDSR
+            Value: DICOM Modality Type
+    Data File Checksum Type:
+        Desc: The method by which the file checksum was calculated.
+        Enum:
+        - md5sum
+        - sha1
+        - sha256
+        Term:
+        -   Code: '11475057'
+            Definition: The method by which the file checksum was calculated.
+            Handle: Data File Checksum Type
+            Origin: caDSR
+            Value: Data File Checksum Type
+    Data File Checksum Value:
+        Desc: A small-sized block of data derived from a file for the purpose of detecting
+            errors that may have been introduced during file transmission and/or storage
+            and used to verify data integrity.
+        Term:
+        -   Code: '11480133'
+            Definition: A small-sized block of data derived from a file for the purpose
+                of detecting errors that may have been introduced during file transmission
+                and/or storage and used to verify data integrity.
+            Handle: Data File Checksum Value
+            Origin: caDSR
+            Value: Data File Checksum Value
+        Type: TBD
+    Data File Compression Status:
+        Desc: The state of data when saved to storage space or during data transmission.
+        Enum:
+        - Compressed
+        - Uncompressed
+        - Unknown
+        Term:
+        -   Code: '11387114'
+            Definition: The state of data when saved to storage space or during data
+                transmission.
+            Handle: Data File Compression Status
+            Origin: caDSR
+            Value: Data File Compression Status
+    Data File Description:
+        Desc: A free text field that can be used to document the content and other
+            details about an electronic file that may not be captured elsewhere.
+        Term:
+        -   Code: '11280338'
+            Definition: A free text field that can be used to document the content
+                and other details about an electronic file that may not be captured
+                elsewhere.
+            Handle: Data File Description
+            Origin: caDSR
+            Value: Data File Description
+        Type: TBD
+    Data File Format:
+        Desc: A defined organization or layout representing and structuring data in
+            a computer file.
+        Enum:
+        - ADF
+        - AVI
+        - BAI
+        - BAM
+        - BCR Biotab
+        - BED
+        - BEDPE Format
+        - BIOM
+        - Binary Format
+        - CEL
+        - CRAI
+        - CRAM
+        - CSV
+        - DICOM
+        - DOCX
+        - DSV
+        - FASTA
+        - FASTQ
+        - GCT/Res Format
+        - GFF3
+        - GPR
+        - GTF
+        - GZIP Format
+        - GenBank Format
+        - HDF5
+        - HIC
+        - HTML
+        - IDAT
+        - IDF
+        - JPEG
+        - JPEG 2000
+        - JSON
+        - MAF
+        - MAGE-TAB
+        - MAT
+        - MATLAB Script
+        - MEX
+        - MPEG-4
+        - NIFTI Format
+        - OME-TIFF
+        - PDF
+        - PNG
+        - Plain Text Data Format
+        - Python Script Format
+        - R File Format
+        - R Markdown
+        - SDRF
+        - SVG
+        - SVS
+        - Sequence Record Format
+        - TAR
+        - TIFF
+        - TSV
+        - TXT
+        - Thermo RAW
+        - VCF
+        - XLS
+        - XLSX
+        - XML
+        - YAML
+        - ZIP
+        - bedgraph
+        - bigBed
+        - bigWig
+        - gVCF
+        - mtx
+        - mzIdentML
+        - mzML
+        - mzXML
+        Term:
+        -   Code: '11416926'
+            Definition: A defined organization or layout representing and structuring
+                data in a computer file.
+            Handle: Data File Format
+            Origin: caDSR
+            Value: Data File Format
+    Data File Name:
+        Desc: The literal label for an electronic data file.
+        Term:
+        -   Code: '11284037'
+            Definition: The literal label for an electronic data file.
+            Handle: Data File Name
+            Origin: caDSR
+            Value: Data File Name
+        Type: TBD
+    Data File Size:
+        Desc: The measure (in bytes) of how much space a data file takes up on a storage
+            medium.
+        Term:
+        -   Code: '11479876'
+            Definition: The measure (in bytes) of how much space a data file takes
+                up on a storage medium.
+            Handle: Data File Size
+            Origin: caDSR
+            Value: Data File Size
+        Type: TBD
+    Days from First Subject Visit to Specimen Collection:
+        Desc: The number of days from the date the subject first visited to the date
+            a sample was collected.
+        Term:
+        -   Code: '11248874'
+            Definition: The number of days from the date the subject first visited
+                to the date a sample was collected.
+            Handle: Days from First Subject Visit to Specimen Collection
+            Origin: caDSR
+            Value: Days from First Subject Visit to Specimen Collection
+        Type: TBD
+    Days from First Treatment to Specimen Collection:
+        Desc: The number of days from the date the first treatment was administered
+            to the date a sample was collected.
+        Term:
+        -   Code: '11250807'
+            Definition: The number of days from the date the first treatment was administered
+                to the date a sample was collected.
+            Handle: Days from First Treatment to Specimen Collection
+            Origin: caDSR
+            Value: Days from First Treatment to Specimen Collection
+        Type: TBD
+    Days from Initial Genomic Sequencing to Specimen Collection:
+        Desc: The number of days from the date the initial genomic sequencing was
+            done to the date a sample was collected.
+        Term:
+        -   Code: '11251130'
+            Definition: The number of days from the date the initial genomic sequencing
+                was done to the date a sample was collected.
+            Handle: Days from Initial Genomic Sequencing to Specimen Collection
+            Origin: caDSR
+            Value: Days from Initial Genomic Sequencing to Specimen Collection
+        Type: TBD
+    Days from Recurrence to Specimen Collection:
+        Desc: The number of days from the date the disease recurrence was identified
+            to the date a sample was collected.
+        Term:
+        -   Code: '11251133'
+            Definition: The number of days from the date the disease recurrence was
+                identified to the date a sample was collected.
+            Handle: Days from Recurrence to Specimen Collection
+            Origin: caDSR
+            Value: Days from Recurrence to Specimen Collection
+        Type: TBD
+    Days from Specimen Collection to Initial Pathologic Diagnosis:
+        Desc: The number of days from the date a sample was collected to the date
+            of the initial pathologic diagnosis.
+        Term:
+        -   Code: '11253404'
+            Definition: The number of days from the date a sample was collected to
+                the date of the initial pathologic diagnosis.
+            Handle: Days from Specimen Collection to Initial Pathologic Diagnosis
+            Origin: caDSR
+            Value: Days from Specimen Collection to Initial Pathologic Diagnosis
+        Type: TBD
+    Disease Progression or Recurrence Indicator:
+        Desc: An indication as to whether the subject is experiencing a worsening
+            or a return of the disease.
+        Enum:
+        - 'No'
+        - Not Allowed To Collect
+        - Not Applicable
+        - Not Reported
+        - Unknown
+        - 'Yes'
+        Term:
+        -   Code: '13529783'
+            Definition: An indication as to whether the subject is experiencing a
+                worsening or a return of the disease.
+            Handle: Disease Progression or Recurrence Indicator
+            Origin: caDSR
+            Value: Disease Progression or Recurrence Indicator
+    "Disease Progression or Recurrence Type":
+        Desc: A term describing the kind of worsening or return of disease that a
+            subject is experiencing.
+        Enum:
+        - Biochemical
+        - Distant
+        - Local
+        - Locoregional
+        - Not Reported
+        - Regional
+        - Unknown
+        Term:
+        -   Code: '14742451'
+            Definition: A term describing the kind of worsening or return of disease
+                that a subject is experiencing.
+            Handle: "Disease Progression or Recurrence Type"
+            Origin: caDSR
+            Value: "Disease Progression or Recurrence Type"
+    ECOG Performance Status Score:
+        Desc: "A score for a functional scale designed to assess disease progression 
+            and its affect on the daily living abilities of the patient that was 
+            developed by Eastern Cooperative Oncology Group (ECOG, now ECOG-ACRIN)."
+        Enum:
+        - '0'
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        Term:
+        -   Code: '88'
+            Definition: "A score for a functional scale designed to assess disease 
+                progression and its affect on the daily living abilities of the 
+                patient that was developed by Eastern Cooperative Oncology Group 
+                (ECOG, now ECOG-ACRIN)."
+            Handle: ECOG Performance Status Score
+            Origin: caDSR
+            Value: ECOG Performance Status Score
+    Environmental Exposure Type:
+        Desc: "The category related to contact with chemical, biological, or physical 
+            substances found in air, water, food, soil, or product that may have 
+            a harmful effect on a person's health."
+        Enum:
+        - Asbestos Exposure
+        - Chemical Exposure
+        - Marijuana Smoke Exposure
+        - Radiation Exposure
+        - Radon Exposure
+        - Respirable Crystalline Silica Exposure
+        - Smoke Exposure
+        - Smokeless Tobacco Exposure
+        - Tobacco Related Exposure
+        - Wood Dust Exposure
+        Term:
+        -   Code: '11256813'
+            Definition: "The category related to contact with chemical, biological, 
+                or physical substances found in air, water, food, soil, or product  
+                that may have a harmful effect on a person's health."
+            Handle: Environmental Exposure Type
+            Origin: caDSR
+            Value: Environmental Exposure Type
+    HGNC Gene Identifier:
+        Desc: The unique numerical identifier for a particular gene assigned by the
+            HGNC (HUGO Gene Nomenclature Committee - an organism specific nomenclature
+            committee).
+        Enum:
+        - HGNC (By Reference)
+        Term:
+        -   Code: '12461467'
+            Definition: The unique numerical identifier for a particular gene assigned
+                by the HGNC (HUGO Gene Nomenclature Committee - an organism specific
+                nomenclature committee).
+            Handle: HGNC Gene Identifier
+            Origin: caDSR
+            Value: HGNC Gene Identifier
+    ICD-10-CM Disease Code:
+        Desc: "An alphanumeric value from the tenth version of the International 
+            Classification of Disease (ICD-10-CM, the disease code subset of ICD-10) 
+            used to identify the diagnosis in humans."
+        Enum:
+        - ICD-10-CM (By Reference)
+        Term:
+        -   Code: '11479873'
+            Definition: "An alphanumeric value from the tenth version of the International 
+                Classification of Disease (ICD-10-CM, the disease code subset of 
+                ICD-10) used to identify the diagnosis in humans."
+            Handle: ICD-10-CM Disease Code
+            Origin: caDSR
+            Value: ICD-10-CM Disease Code
+    ICD-O-3 Morphology Code:
+        Desc: The coded result of analyzing the microscopic anatomy of normal and
+            abnormal cells and tissues of the specimen by examining a thin slice (section)
+            under a light (optical) or electron microscope. The code represents the
+            histology of the disease using the third edition of the International
+            Classification of Diseases for Oncology.
+        Enum:
+        - ICD-O-3 (By Reference)
+        Term:
+        -   Code: '11326261'
+            Definition: The coded result of analyzing the microscopic anatomy of normal
+                and abnormal cells and tissues of the specimen by examining a thin
+                slice (section) under a light (optical) or electron microscope. The
+                code represents the histology of the disease using the third edition
+                of the International Classification of Diseases for Oncology.
+            Handle: ICD-O-3 Morphology Code
+            Origin: caDSR
+            Value: ICD-O-3 Morphology Code
+    Karnofsky Performance Status Score:
+        Desc: "A score from the Karnofsky Performance Status representing the functional 
+            capabilities or the daily living abilities of a person."
+        Enum:
+        - '0'
+        - '10'
+        - '100'
+        - '20'
+        - '30'
+        - '40'
+        - '50'
+        - '60'
+        - '70'
+        - '80'
+        - '90'
+        Term:
+        -   Code: '2003853'
+            Definition: "A score from the Karnofsky Performance Status representing 
+                the functional capabilities or the daily living abilities of a 
+                person."
+            Handle: Karnofsky Performance Status Score
+            Origin: caDSR
+            Value: Karnofsky Performance Status Score
+    Last Known Disease Status:
+        Desc: The most recently documented condition or state of an subject's neoplasm.
+        Enum:
+        - Biochemical evidence of disease without structural correlate
+        - Distant Metastasis
+        - Localized Disease
+        - New Tumor Event
+        - Not Allowed To Collect
+        - Not Applicable
+        - Not Reported
+        - Regional Disease
+        - Tumor Free
+        - Unknown
+        - With Tumor
+        Term:
+        -   Code: '12447172'
+            Definition: The most recently documented condition or state of an subject's
+                neoplasm.
+            Handle: Last Known Disease Status
+            Origin: caDSR
+            Value: Last Known Disease Status
+    Lymph Node Involvement Anatomic Site UBERON Identifier:
+        Desc: The UBERON identifier of the organ or part of the body describing lymph
+            node involvement in disease.
+        Term:
+        -   Code: '14883075'
+            Definition: The UBERON identifier of the organ or part of the body describing
+                lymph node involvement in disease.
+            Handle: Lymph Node Involvement Anatomic Site UBERON Identifier
+            Origin: caDSR
+            Value: Lymph Node Involvement Anatomic Site UBERON Identifier
+        Type: TBD
+    Method of Diagnosis:
+        Desc: The clinical or laboratory procedure(s) used in the determination of
+            a disease diagnosis.
+        Enum:
+        - Autopsy
+        - Biopsy
+        - Blood Sample
+        - Bone Marrow Aspirate
+        - Core Biopsy
+        - Cystoscopy
+        - Diagnostic Imaging
+        - Dilation and Curettage
+        - Enucleation
+        - Excisional Biopsy
+        - Fine Needle Aspiration
+        - Histopathology
+        - Imaging Technique
+        - Incisional Biopsy
+        - Laparoscopy
+        - Laparotomy
+        - Magnetic Resonance Imaging Study File
+        - Not Reported
+        - Pap Smear
+        - Pathologic Review
+        - Physical Examination
+        - Surgical Resection
+        - Thoracentesis
+        - Tumor Debulking
+        - Ultrasound Guided Biopsy
+        - Ultrasound Imaging
+        - Unknown
+        Term:
+        -   Code: '14857681'
+            Definition: The clinical or laboratory procedure(s) used in the determination
+                of a disease diagnosis.
+            Handle: Method of Diagnosis
+            Origin: caDSR
+            Value: Method of Diagnosis
+    NCBI Taxonomy ID:
+        Desc: "A label provided by NCBI Taxonomy Database (https://www.ncbi.nlm.nih.gov/taxonomy/),  
+            which uniquely identifies group or category, at any level, in a system 
+            for classifying plants or animals (including humans) providing ranked 
+            categories for the classification of organisms according to their suspected 
+            evolutionary relationships."
+        Enum:
+        - NCBI (By Reference)
+        Term:
+        -   Code: '10543100'
+            Definition: "A label provided by NCBI Taxonomy Database (https://www.ncbi.nlm.nih.gov/taxonomy/),  
+                which uniquely identifies group or category, at any level, in a 
+                system for classifying plants or animals (including humans) providing 
+                ranked categories for the classification of organisms according 
+                to their suspected evolutionary relationships."
+            Handle: NCBI Taxonomy ID
+            Origin: caDSR
+            Value: NCBI Taxonomy ID
+    Person Academic Degree Suffix Abbreviation Text:
+        Desc: The abbreviation that represents the affix occurring at the end of a
+            name for an award conferred by a college, university, or other postsecondary
+            education institution as official recognition for the successful completion
+            of a program of studies.
+        Enum:
+        - AA
+        - AAS
+        - AB
+        - ABA
+        - AE
+        - AM
+        - AS
+        - BA
+        - BBA
+        - BE
+        - BEd
+        - BEng
+        - BFA
+        - BN
+        - BS
+        - BSL
+        - BSN
+        - BSW
+        - BT
+        - DBA
+        - DC
+        - DD
+        - DDS
+        - DED
+        - DMD
+        - DO
+        - DPM
+        - DSW
+        - DVM
+        - DrPH
+        - EdD
+        - JD
+        - LLM
+        - MA
+        - MBA
+        - MCE
+        - MD
+        - MDI
+        - ME
+        - MEE
+        - MEd
+        - MFA
+        - MHSA
+        - MME
+        - MPA
+        - MPH
+        - MS
+        - MSL
+        - MSN
+        - MSW
+        - MT
+        - ND
+        - OD
+        - PhD
+        - PhE
+        - PharmD
+        - ScD
+        - ThD
+        Term:
+        -   Code: '2668478'
+            Definition: The abbreviation that represents the affix occurring at the
+                end of a name for an award conferred by a college, university, or
+                other postsecondary education institution as official recognition
+                for the successful completion of a program of studies.
+            Handle: Person Academic Degree Suffix Abbreviation Text
+            Origin: caDSR
+            Value: Person Academic Degree Suffix Abbreviation Text
+    Person Email Address Text:
+        Desc: The string of characters that represents the electronic mail address
+            of a person.
+        Term:
+        -   Code: '2517550'
+            Definition: The string of characters that represents the electronic mail
+                address of a person.
+            Handle: Person Email Address Text
+            Origin: caDSR
+            Value: Person Email Address Text
+        Type: TBD
+    Person Family/Last Name:
+        Desc: A means of identifying an individual by using a word or group of words
+            indicating a person's last (family) name. Synonym = Last Name, Surname.
+        Term:
+        -   Code: '2179591'
+            Definition: A means of identifying an individual by using a word or group
+                of words indicating a person's last (family) name. Synonym = Last
+                Name, Surname.
+            Handle: Person Family/Last Name
+            Origin: caDSR
+            Value: Person Family/Last Name
+        Type: TBD
+    Person Genealogy Suffix Code:
+        Desc: Text term to represent an individual's position in a family lineage
+            or pedigree.
+        Enum:
+        - I
+        - II
+        - III
+        - IV
+        - Jr.
+        - Sr.
+        Term:
+        -   Code: '2006475'
+            Definition: Text term to represent an individual's position in a family
+                lineage or pedigree.
+            Handle: Person Genealogy Suffix Code
+            Origin: caDSR
+            Value: Person Genealogy Suffix Code
+    Person Given/First Name:
+        Desc: A word or group of words indicating a person's first (personal or given)
+            name; the name that precedes the surname. Synonym = Given Name.
+        Term:
+        -   Code: '2179589'
+            Definition: A word or group of words indicating a person's first (personal
+                or given) name; the name that precedes the surname. Synonym = Given
+                Name.
+            Handle: Person Given/First Name
+            Origin: caDSR
+            Value: Person Given/First Name
+        Type: TBD
+    Person Middle Name:
+        Desc: A means of identifying an individual by using a word or group of words
+            indicating a person's middle name.
+        Term:
+        -   Code: '2179590'
+            Definition: A means of identifying an individual by using a word or group
+                of words indicating a person's middle name.
+            Handle: Person Middle Name
+            Origin: caDSR
+            Value: Person Middle Name
+        Type: TBD
+    Person Name Prefix Abbreviation Text:
+        Desc: The abbreviation that represents an affix occurring at or before the
+            beginning of an individual's name.
+        Enum:
+        - Bish.
+        - Br.
+        - Ch.
+        - Dr.
+        - Fr.
+        - Miss
+        - Mr.
+        - Mrs.
+        - Ms.
+        - Prof.
+        - R.
+        - Rev.
+        - Sr.
+        Term:
+        -   Code: '2663165'
+            Definition: The abbreviation that represents an affix occurring at or
+                before the beginning of an individual's name.
+            Handle: Person Name Prefix Abbreviation Text
+            Origin: caDSR
+            Value: Person Name Prefix Abbreviation Text
+    Person ORCID Text:
+        Desc: A persistent unique digital identifier assigned to a principal investigator
+            by the Open Researcher and Contributor ID (ORCID) organization.
+        Term:
+        -   Code: '10624734'
+            Definition: A persistent unique digital identifier assigned to a principal
+                investigator by the Open Researcher and Contributor ID (ORCID) organization.
+            Handle: Person ORCID Text
+            Origin: caDSR
+            Value: Person ORCID Text
+        Type: TBD
+    Person Role Type:
+        Desc: The text that describes the distinguishable characteristics of the action
+            or activity assigned to or required or expected of a person.
+        Enum:
+        - ABS Coordinator
+        - Abstractor
+        - Account Administrator
+        - AdEERS Contact
+        - Address Module Coordinator
+        - Admitting Physician
+        - Adverse Event Coordinator
+        - Agent Expert
+        - Agent Inspector
+        - Alternative Principal Investigator
+        - Associate
+        - Attending Physician
+        - Audiologist
+        - Branch Chief
+        - Bronchoscopist
+        - CDU Web Contact
+        - CEP Member
+        - Central Reviewer
+        - Checklist Completer
+        - Checklist Supervisor
+        - Clinical Coordinator
+        - Clinical Nurse Specialist
+        - Clinical Research Associate
+        - Co-Investigator
+        - Co-Project Officer
+        - Community Educator
+        - Concept Review Chair
+        - Consulting Physician
+        - Contact Person
+        - Contract Officer
+        - Contract Principal Investigator
+        - Coordinating Investigator
+        - Coordinator
+        - Data Manager
+        - Data Submitter
+        - Developer
+        - Division Head
+        - Drug Company Contact
+        - ENABLE Coach
+        - Employee
+        - Evaluator
+        - Funded Principal Investigator
+        - Gastroenterologist
+        - Grant Investigator
+        - Grant Principal Investigator
+        - Grant Specialist
+        - Group Coordinator
+        - Guardian
+        - Head of Division
+        - Health Care Provider
+        - Infusion Nurse
+        - Interpreter
+        - Interventional Radiologist
+        - Interviewer
+        - Investigator
+        - Laboratory Director
+        - Laboratory Technologist
+        - Lead Drug Monitor
+        - Legal Representative of the Sponsor
+        - Letter of Intent Review Chair
+        - Mail Contact
+        - Mail Contact (Mgr)
+        - Mail to contact
+        - Maintainer
+        - Medical Monitor
+        - Medical Oncologist
+        - Medical Physicist
+        - Neuropathologist
+        - Nurse
+        - Nurse Coach
+        - Nurse Practitioner
+        - Oncology Nurse
+        - PCP
+        - PMB Drug Company Contact
+        - Participant
+        - Participant Chief
+        - Patient
+        - Pharmaceutical Liaison
+        - Pharmacist
+        - Pharmacologist
+        - Physician
+        - Physician Assistant
+        - Physicist
+        - Population Member
+        - Practitioner
+        - Practitioner Assigned
+        - Primary CDUS Contact
+        - Primary Shipping Designee
+        - Primary care physician
+        - Principal Investigator
+        - Principal Investigator (MGR)
+        - Program Director
+        - Program Specialist
+        - Project Coordinator
+        - Project Officer
+        - Protocol Author
+        - Protocol Chair
+        - Protocol Chair at an Organization
+        - Protocol Lead Investigator
+        - Protocol Review Chair
+        - Protocol Specialist
+        - Radiation Oncologist
+        - Referring Pathologist
+        - Referring Physician
+        - Registrar
+        - Registration Coordinator
+        - Regulatory Coordinator
+        - Representative Investigator
+        - Research Clinician
+        - Research Nurse
+        - Research Pathologist
+        - Respondent
+        - Review Liaison
+        - Review Specialist
+        - Reviewing Pathologist
+        - Reviewing Radiologist
+        - SHE Instructor
+        - Scientific Monitor
+        - Secondary CDUS Contact
+        - Shipping Designee
+        - Site Coordinator
+        - Site Investigator
+        - Site Leader
+        - Site Personnel
+        - Site Representative Investigator
+        - Social Worker
+        - Sponsor
+        - Sponsor Medical Expert
+        - Sponsor/Medical Expert
+        - Statistician
+        - Study Chair
+        - Study Chairperson
+        - Study Coordinator
+        - Subject Recruiter
+        - Submitting Pathologist
+        - Surgeon
+        - Surgical Oncologist
+        - Translator
+        - Treating Physician
+        Term:
+        -   Code: '2201713'
+            Definition: The text that describes the distinguishable characteristics
+                of the action or activity assigned to or required or expected of a
+                person.
+            Handle: Person Role Type
+            Origin: caDSR
+            Value: Person Role Type
+    Primary Cause of Death:
+        Desc: The circumstance or condition of greatest rank or importance that results
+            in the death of a living being.
+        Enum:
+        - APL Differentiation Syndrome
+        - Accidental death
+        - Acute GVHD
+        - Adult Respiratory Distress Syndrome (ARDS)
+        - Adverse Event
+        - Aspiration Pneumonia
+        - BCNU IP
+        - Bacterial infection
+        - Cancer Related
+        - Cardiac Disease
+        - Cardiac failure
+        - Cardiopulmonary Arrest
+        - Cardiovascular Disorder
+        - Cardiovascular accident
+        - Central nervous system(CNS) failure
+        - Chronic GVHD
+        - Chronic Obstructive Pulmonary Disease
+        - Chronic liver disease
+        - Congestive Heart Failure
+        - Coronary artery disease (atherosclerosis)
+        - Dementia  (including Alzheimer's disease)
+        - Diabetes Mellitus
+        - Disseminated intravascular coagulation (DIC)
+        - Drug Related
+        - End-stage Renal Disease
+        - Failure to Thrive
+        - Fungal infection
+        - Gastrointestinal (GI) failure (not liver)
+        - Gastrointestinal hemorrhage
+        - Graft Versus Host Disease
+        - Graft rejection or failure
+        - HIV/AIDS
+        - Hemorrhage
+        - Hemorrhage, not otherwise specified
+        - Hemorrhagic cystitis
+        - Hepatitis
+        - Herpes
+        - IPS, idiopathic
+        - IPS, viral, cytomegalovirus(CMV)
+        - IPS, viral, other
+        - Immunotherapy-Related
+        - Infection
+        - Infection, NOS
+        - Infection, organism not identified
+        - Influenza
+        - Interstitial Pneumonia (IP) NOS
+        - Intracranial hemorrhage
+        - Liver failure (not VOD)
+        - Multiple Organ Failure
+        - Myocardial infarction
+        - Natural causes
+        - Non-protocol cancer therapy
+        - Not Cancer Related
+        - Not Reported
+        - Organ failure, not otherwise specified
+        - Other cause
+        - Parkinson's Disease
+        - Persistence or recurrence of underlying disease
+        - Pneumonia NOS
+        - Prior malignancy
+        - Protozoal infection
+        - Pulmonary Disease
+        - Pulmonary Embolism
+        - Pulmonary failure
+        - Pulmonary hemorrhage
+        - Radiation IP
+        - Recurrence/persistence/progression of disease reported for first HSCT
+        - Renal Disorder, NOS
+        - Renal failure
+        - Respiratory failure
+        - Sepsis
+        - Sinusoidal Obstruction Syndrome
+        - Spinal Muscular Atrophy
+        - Suicide
+        - Surgical Complication
+        - Thromboembolic
+        - Thrombosis
+        - Thrombotic thrombocytopenic purpura (HUS/TTP)
+        - Toxicity
+        - Unacceptable Toxicity
+        - Unclassified infection / Infection NOS
+        - Unknown
+        - VOD
+        - Vascular, not otherwise specified
+        - Veno-occlusive disease (VOD) / sinusodial obstruction syndrome (SOS)
+        - Viral infection
+        Term:
+        -   Code: '4783274'
+            Definition: The circumstance or condition of greatest rank or importance
+                that results in the death of a living being.
+            Handle: Primary Cause of Death
+            Origin: caDSR
+            Value: Primary Cause of Death
+    Program Name:
+        Desc: "The narrative title used to refer to a broad framework (an administrative  
+            umbrella) of goals under which related projects or other research 
+            activities are grouped.  Example - Clinical Proteomic Tumor Analysis 
+            Consortium"
+        Term:
+        -   Code: '11444542'
+            Definition: "The narrative title used to refer to a broad framework  
+                (an administrative umbrella) of goals under which related projects 
+                or other research activities are grouped.  Example - Clinical 
+                Proteomic Tumor Analysis Consortium"
+            Handle: Program Name
+            Origin: caDSR
+            Value: Program Name
+        Type: TBD
+    Program Short Name:
+        Desc: "An acronym or abbreviated form of the title of a broad framework 
+            of goals under which related projects or other research activities  
+            are grouped.  Example – CPTAC"
+        Term:
+        -   Code: '11459801'
+            Definition: "An acronym or abbreviated form of the title of a broad 
+                framework of goals under which related projects or other research 
+                activities are grouped.  Example – CPTAC"
+            Handle: Program Short Name
+            Origin: caDSR
+            Value: Program Short Name
+        Type: TBD
+    Progression or Recurrence Anatomic Site UBERON Identifier:
+        Desc: The UBERON identifier of the organ or part of the body related to the
+            progressive or recurrent disease.
+        Term:
+        -   Code: '14883061'
+            Definition: The UBERON identifier of the organ or part of the body related
+                to the progressive or recurrent disease.
+            Handle: Progression or Recurrence Anatomic Site UBERON Identifier
+            Origin: caDSR
+            Value: Progression or Recurrence Anatomic Site UBERON Identifier
+        Type: TBD
+    Project Name:
+        Desc: "The narrative title used to refer to an organ-, site-, disease- or 
+            phase-specific data collection within a broad framework of goals under 
+            which related studies or other research activities are grouped."
+        Term:
+        -   Code: '11459804'
+            Definition: "The narrative title used to refer to an organ-, site-, disease- 
+                or phase-specific data collection within a broad framework of goals 
+                under which related studies or other research activities are grouped."
+            Handle: Project Name
+            Origin: caDSR
+            Value: Project Name
+        Type: TBD
+    Project Short Name:
+        Desc: "An acronym or abbreviated form of the title used to refer to an  
+            organ-, site- or disease-specific data collection within a broad 
+            framework of goals under which related studies or other research 
+            activities are grouped."
+        Term:
+        -   Code: '11459806'
+            Definition: "An acronym or abbreviated form of the title used to refer 
+                to an organ-, site- or disease-specific data collection within  
+                a broad framework of goals under which related studies or other 
+                research activities are grouped."
+            Handle: Project Short Name
+            Origin: caDSR
+            Value: Project Short Name
+        Type: TBD
+    Resection or Biopsy Anatomic Site UBERON Identifier:
+        Desc: The UBERON identifier of the organ or part of the body resected or biopsied
+        Term:
+        -   Code: '14883054'
+            Definition: The UBERON identifier of the organ or part of the body resected
+                or biopsied
+            Handle: Resection or Biopsy Anatomic Site UBERON Identifier
+            Origin: caDSR
+            Value: Resection or Biopsy Anatomic Site UBERON Identifier
+        Type: TBD
+    Sex at Birth:
+        Desc: The biological sex at the time of birth.
+        Enum:
+        - Decline to answer
+        - Don't know
+        - Female
+        - Intersex
+        - Male
+        - None of these describe me
+        - Prefer not to answer
+        - Unknown
+        - X
+        Term:
+        -   Code: '7572817'
+            Definition: The biological sex at the time of birth.
+            Handle: Sex at Birth
+            Origin: caDSR
+            Value: Sex at Birth
+    Specimen Anatomic Site UBERON Identifier:
+        Desc: The identifier of the location within the body from which a specimen
+            was originally obtained.
+        Term:
+        -   Code: '12083894'
+            Definition: The identifier of the location within the body from which
+                a specimen was originally obtained.
+            Handle: Specimen Anatomic Site UBERON Identifier
+            Origin: caDSR
+            Value: Specimen Anatomic Site UBERON Identifier
+        Type: TBD
+    Specimen Longest Dimension:
+        Desc: The maximum length of a straight line passing through the center of
+            the sample, measured in millimeters.
+        Term:
+        -   Code: '5432602'
+            Definition: The maximum length of a straight line passing through the
+                center of the sample, measured in millimeters.
+            Handle: Specimen Longest Dimension
+            Origin: caDSR
+            Value: Specimen Longest Dimension
+        Type: TBD
+    Specimen Shortest Dimension:
+        Desc: The minimum length of a straight line passing through the center of
+            the sample, measured in millimeters
+        Term:
+        -   Code: '5432603'
+            Definition: The minimum length of a straight line passing through the
+                center of the sample, measured in millimeters
+            Handle: Specimen Shortest Dimension
+            Origin: caDSR
+            Value: Specimen Shortest Dimension
+        Type: TBD
+    Specimen Tumor or Normal Category:
+        Desc: A text term that represents whether the sample taken was of cellular
+            composition and architectural patterns as expected (normal), had uncontrolled
+            cellular proliferation (tumor), or was comprised of morphologically normal
+            tissue from immediately surrounding the tumor (peritumoral).
+        Enum:
+        - Normal
+        - Not Reported
+        - Peritumoral
+        - Tumor
+        - Unknown
+        Term:
+        -   Code: '14688604'
+            Definition: A text term that represents whether the sample taken was of
+                cellular composition and architectural patterns as expected (normal),
+                had uncontrolled cellular proliferation (tumor), or was comprised
+                of morphologically normal tissue from immediately surrounding the
+                tumor (peritumoral).
+            Handle: Specimen Tumor or Normal Category
+            Origin: caDSR
+            Value: Specimen Tumor or Normal Category
+    Specimen Type:
+        Desc: The kind of material that forms the sample as captured in the Ontology
+            for Biobanking (OBIB), a specimen subset of the Ontology for Biomedical
+            Investigations (OBI).
+        Enum:
+        - OBIB (By Reference)
+        Term:
+        -   Code: '11253427'
+            Definition: The kind of material that forms the sample as captured in
+                the Ontology for Biobanking (OBIB), a specimen subset of the Ontology
+                for Biomedical Investigations (OBI).
+            Handle: Specimen Type
+            Origin: caDSR
+            Value: Specimen Type
+    Study Name:
+        Desc: "The narrative title used as a textual label for a research 
+            data collection.  Example – Comparative Molecular Life History 
+            of Spontaneous Canine and Human Gliomas"
+        Term:
+        -   Code: '11459810'
+            Definition: "The narrative title used as a textual label for a  
+                research data collection.  Example – Comparative Molecular Life 
+                History of Spontaneous Canine and Human Gliomas"
+            Handle: Study Name
+            Origin: caDSR
+            Value: Study Name
+        Type: TBD
+    Study Short Name:
+        Desc: "The acronym or abbreviated form of the title for a research 
+            data collection.  Example – GLIOMA01"
+        Term:
+        -   Code: '11459812'
+            Definition: "The acronym or abbreviated form of the title for a  
+                research data collection.  Example – GLIOMA01"
+            Handle: Study Short Name
+            Origin: caDSR
+            Value: Study Short Name
+        Type: TBD
+    Subject Age At Diagnosis:
+        Desc: Age at the time of diagnosis expressed in number of days since birth.
+        Term:
+        -   Code: '10609539'
+            Definition: Age at the time of diagnosis expressed in number of days since
+                birth.
+            Handle: Subject Age At Diagnosis
+            Origin: caDSR
+            Value: Subject Age At Diagnosis
+        Type: TBD
+    Subject Race:
+        Desc: An arbitrary classification of a taxonomic group that is a division
+            of a species. It usually arises as a consequence of geographical isolation
+            within a species and is characterized by shared heredity, physical attributes
+            and behavior, and in the case of humans, by common history, nationality,
+            or geographic distribution. The provided values are based on the categories
+            defined by the U.S. Office of Management and Business and used by the
+            U.S. Census Bureau.
+        Enum:
+        - American Indian or Alaska Native
+        - Asian
+        - Black or African American
+        - Native Hawaiian or other Pacific Islander
+        - Not Reported
+        - Not allowed to collect
+        - Unknown
+        - White
+        Term:
+        -   Code: '2192199'
+            Definition: An arbitrary classification of a taxonomic group that is a
+                division of a species. It usually arises as a consequence of geographical
+                isolation within a species and is characterized by shared heredity,
+                physical attributes and behavior, and in the case of humans, by common
+                history, nationality, or geographic distribution. The provided values
+                are based on the categories defined by the U.S. Office of Management
+                and Business and used by the U.S. Census Bureau.
+            Handle: Subject Race
+            Origin: caDSR
+            Value: Subject Race
+    Subject Reported Ethnicity:
+        Desc: An individual's self-described social and cultural grouping, specifically
+            whether an individual describes themselves as Hispanic or Latino. The
+            provided values are based on the categories defined by the U.S. Office
+            of Management and Business and used by the U.S. Census Bureau.
+        Enum:
+        - Hispanic or Latino
+        - Not Hispanic or Latino
+        - Not allowed to collect
+        - Not reported
+        - Unknown
+        Term:
+        -   Code: '2192217'
+            Definition: An individual's self-described social and cultural grouping,
+                specifically whether an individual describes themselves as Hispanic
+                or Latino. The provided values are based on the categories defined
+                by the U.S. Office of Management and Business and used by the U.S.
+                Census Bureau.
+            Handle: Subject Reported Ethnicity
+            Origin: caDSR
+            Value: Subject Reported Ethnicity
+    Treatment Anatomic Site UBERON Identifier:
+        Desc: The UBERON identifier of the organ or part of the body targeted by a
+            therapeutic procedure.
+        Term:
+        -   Code: '14461856'
+            Definition: The UBERON identifier of the organ or part of the body targeted
+                by a therapeutic procedure.
+            Handle: Treatment Anatomic Site UBERON Identifier
+            Origin: caDSR
+            Value: Treatment Anatomic Site UBERON Identifier
+        Type: TBD
+    Treatment Type:
+        Desc: A text term that describes the kind of medical care given to the patient
+            to mitigate or cure an illness, injury, or reduced health status.
+        Enum:
+        - 3-Dimensional Conformal Radiation Therapy
+        - Allogeneic Hematopoietic Stem Cell Transplantation
+        - Autologous Stem Cell Transplantation
+        - Chemotherapy
+        - Concurrent Chemoradiation
+        - Conventional Radiotherapy
+        - External Beam Radiation Therapy
+        - High-Dose Rate Brachytherapy
+        - Hormone Therapy
+        - Immunotherapy
+        - Intensity-Modulated Radiation Therapy
+        - Low-Dose Rate Brachytherapy
+        - Not Reported
+        - Pharmacotherapy
+        - Proton Beam Radiation Therapy
+        - Radiation Therapy
+        - Radiofrequency Ablation
+        - Stereotactic Body Radiation Therapy
+        - Stereotactic Radiosurgery
+        - Surgical Procedure
+        - Targeted Molecular Therapy
+        - Unknown
+        Term:
+        -   Code: '14737565'
+            Definition: A text term that describes the kind of medical care given
+                to the patient to mitigate or cure an illness, injury, or reduced
+                health status.
+            Handle: Treatment Type
+            Origin: caDSR
+            Value: Treatment Type
+    Treatment or Therapy Indicator:
+        Desc: An indicator that describes whether therapy was administered.
+        Enum:
+        - 'No'
+        - Not Reported
+        - Unknown
+        - 'Yes'
+        Term:
+        -   Code: '14713318'
+            Definition: An indicator that describes whether therapy was administered.
+            Handle: Treatment or Therapy Indicator
+            Origin: caDSR
+            Value: Treatment or Therapy Indicator
+    Tumor Grade:
+        Desc: A text term to express the degree of abnormality of cancer cells as
+            a measure of differentiation and aggressiveness.
+        Enum:
+        - G1
+        - G2
+        - G3
+        - G4
+        - GB
+        - GX
+        - High Grade
+        - Intermediate Grade
+        - Low Grade
+        - Not Applicable
+        - Not Reported
+        - Unknown
+        Term:
+        -   Code: '11325685'
+            Definition: A text term to express the degree of abnormality of cancer
+                cells as a measure of differentiation and aggressiveness.
+            Handle: Tumor Grade
+            Origin: caDSR
+            Value: Tumor Grade
+    Vital Status:
+        Desc: "The participant’s survival state as being living or deceased."
+        Enum:
+        - Alive
+        - Dead
+        - Not reported
+        - Unknown
+        - Unspecified
+        Term:
+        -   Code: '2847330'
+            Definition: "The participant’s survival state as being living or 
+                deceased."
+            Handle: Vital Status
+            Origin: caDSR
+            Value: Vital Status
+    dbGaP Study Accession:
+        Desc: A stable unique alphanumeric identifier assigned to a study and any
+            objects by the database of Genotypes and Phenotypes (dbGaP).
+        Term:
+        -   Code: '11524544'
+            Definition: A stable unique alphanumeric identifier assigned to a study
+                and any objects by the database of Genotypes and Phenotypes (dbGaP).
+            Handle: dbGaP Study Accession
+            Origin: caDSR
+            Value: dbGaP Study Accession
+        Type: TBD
